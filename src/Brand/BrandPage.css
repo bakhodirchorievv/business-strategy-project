@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	background-color: rgba(15, 17, 22, 1);
+	overflow-x: hidden;
+	position: relative;
+}
+
+/* header start */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	margin: 0 auto;
+	user-select: none;
+	padding: 50px 0;
+	margin: 0px 72.5px;
+}
+.ul-wrapper {
+	display: flex;
+	list-style: none;
+	gap: 55px;
+	flex-wrap: wrap;
+	font-size: 15px;
+	color: rgba(117, 127, 147, 1);
+}
+.list-item {
+	cursor: pointer;
+}
+.list-item:first-child {
+	color: white;
+}
+.header-btn {
+	border: 1px solid white;
+	color: white;
+	background-color: inherit;
+	font-size: 14px;
+	font-family: inherit;
+	padding: 17px 36px;
+	border-radius: 10px;
+}
+
+/* main image start */
+.main-img-wrapper {
+	margin: 0px 72.5px 50px;
+}
+.main-img {
+	display: block;
+	width: 85%;
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+/* strategy start */
+.strategy-wrapper {
+	margin: 50px 72.5px;
+	display: flex;
+}
+
+.strategy-left {
+	padding-top: 65px;
+	flex: 1;
+}
+
+.stra-desc {
+	color: rgba(117, 127, 147, 1);
+	font-size: 17px;
+	line-height: 30px;
+	margin-top: 15px;
+}
+.strategy-desc1 {
+	max-width: 447px;
+	margin-top: 20px;
+}
+
+.strategy-right {
+	display: flex;
+	justify-content: right;
+	align-items: flex-start;
+	flex: 1;
+}
+.strategy-main-img {
+	display: block;
+	width: 100%;
+}
+
+.strategy-text-img {
+	margin-left: -72px;
+	margin-top: 60px;
+}
+
+/* offers start */
+.offers-wrapper {
+	margin: 50px 72.5px;
+}
+
+.offers-title {
+	margin-bottom: 10px;
+}
+
+.offer-cards-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right;
+	margin: 0 auto;
+	/* margin-right: -30px; */
+}
+.offer-card {
+	width: 49%;
+	margin-top: 35px;
+}
+
+.offer-last-img {
+	display: block;
+	width: 100%;
+	margin: 35px auto;
+	margin-right: -15px;
+}
+
+/* footer start */
+.footer {
+	background-color: rgba(32, 35, 42, 1);
+	padding: 91.77px 70px;
+	margin: 50px 0 0 1px;
+	border-radius: 100px 100px 0 0;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.vremya {
+	padding-top: 15px;
+}
+
+.footer-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 42%;
+	margin-top: 50px;
+	flex: 1.2;
+}
+
+.zayavku {
+	padding-top: 9px;
+}
+
+.inputs-wrapper {
+	margin-top: 8px;
+	width: 100%;
+}
+
+.input {
+	display: block;
+	width: 100%;
+	background-color: inherit;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 15.51px;
+	letter-spacing: 2%;
+	padding: 15px 0;
+	color: rgba(117, 127, 147, 1);
+	margin-top: 25px;
+}
+
+.input::placeholder {
+	color: rgba(117, 127, 147, 1);
+}
+
+.send-wrapper {
+	margin-top: 50px;
+	display: flex;
+	gap: 25px;
+	width: fit-content;
+	height: 65px;
+}
+
+.send-btn {
+	border-radius: 9.41px;
+	padding: 23px 75px;
+	font-size: 14px;
+	line-height: 18.06px;
+	font-weight: 500;
+}
+.send-desc {
+	color: rgba(117, 127, 147, 1);
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 19.35px;
+	letter-spacing: 2%;
+	max-width: 209px;
+}
+
+.foot-fold,
+.foot-shadow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.foot-shadow {
+	z-index: 0;
+}
+
+.foot-left-bottom {
+	margin-top: 30px;
+	display: flex;
+	align-items: flex-end;
+	gap: 70px;
+}
+
+.bottom-ul {
+	list-style: none;
+	width: fit-content;
+}
+.bottom-list {
+	font-size: 17px;
+	line-height: 21.93px;
+	font-weight: 500;
+	color: rgba(117, 127, 147, 1);
+	border-bottom: 1px solid rgba(117, 127, 147, 1);
+	margin-top: 15px;
+	width: fit-content;
+}
+
+.white-bottom {
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+.apps-wrapper {
+	max-width: 260px;
+}
+
+.app-logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 140px;
+}
+
+.location {
+	font-size: 14px;
+	color: rgba(117, 127, 147, 1);
+	font-weight: 400;
+	line-height: 18.06px;
+	letter-spacing: 2%;
+	margin-top: 26px;
+}
+
+/* background effect start */
+.background-effect {
+	position: absolute;
+	width: 105%;
+	height: 100%;
+	z-index: -2;
+	background-color: inherit;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 72.3px);
+	grid-template-rows: repeat(auto-fill, 69px);
+}
+.background-effect div {
+	box-shadow: 0 0 0 0.08px rgba(128, 128, 128, 0.5);
+}
+
+/* display control */
+.titlle {
+	display: none;
+}
+.vremya {
+	display: block;
+}
