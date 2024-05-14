@@ -35,7 +35,7 @@ const Logics = () => {
 			return;
 		}
 
-		for (let i = 0; i < 2500; i++) {
+		for (let i = 0; i < 3000; i++) {
 			let newDiv = document.createElement("div");
 			bckgEffectWrapper.append(newDiv);
 		}
