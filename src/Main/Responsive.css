@@ -31,6 +31,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.background-effect {
+		width: 120%;
+	}
+	body,
+	html {
+		overflow-x: hidden;
+	}
+
 	.getNone {
 		display: none;
 	}
@@ -458,7 +466,7 @@
 	.elements {
 		object-fit: cover;
 		width: 135%;
-		transition: 1s;
+
 		margin-left: -47px;
 	}
 
@@ -560,7 +568,7 @@
 	.elements {
 		object-fit: cover;
 		width: 140%;
-		transition: 1s;
+
 		margin-left: -38px;
 	}
 }

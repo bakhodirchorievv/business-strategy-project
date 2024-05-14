@@ -108,20 +108,205 @@ body {
 .offer-cards-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: right;
+	justify-content: space-between;
+	padding-right: 0px;
 	margin: 0 auto;
-	/* margin-right: -30px; */
 }
 .offer-card {
 	width: 49%;
-	margin-top: 35px;
+	margin-top: 30px;
+	border-radius: 22.65px;
+	background-color: rgba(32, 35, 42, 1);
+	padding: 34px 30px 34px 30px;
+	position: relative;
+}
+.offerCardTitle {
+	color: white;
+	font-size: 26px;
+	line-height: 33.54px;
+	font-weight: 600;
+}
+.offerCardDesc {
+	color: rgba(117, 127, 147, 1);
+	font-size: 15px;
+	line-height: 28px;
+	margin-top: 12px;
+	max-width: 511px;
 }
 
-.offer-last-img {
-	display: block;
-	width: 100%;
-	margin: 35px auto;
-	margin-right: -15px;
+.offers-foot {
+	margin-top: 30px;
+	text-align: center;
+	background-color: rgba(32, 35, 42, 1);
+	border-radius: 22.65px;
+	padding: 28px 24px;
+	position: relative;
+}
+.offerFootDesc {
+	margin: 12px auto;
+	font-size: 15px;
+	line-height: 28px;
+	color: rgba(117, 127, 147, 1);
+	max-width: 797px;
+}
+
+.flipped {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* pyramids start */
+.pyramids-wrapper {
+	margin: 120px 72.5px 100px;
+}
+.pyramids-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.pyramids-desc {
+	color: rgba(117, 127, 147, 1);
+	font-size: 17px;
+	line-height: 30px;
+	max-width: 526px;
+}
+
+.pyramidTitle {
+	color: white;
+	font-size: 26px;
+	line-height: 33.54px;
+}
+.pyramid-ul {
+	color: rgba(117, 127, 147, 1);
+	font-size: 15px;
+	line-height: 28px;
+}
+.shortPyramidUl {
+	max-width: 717px;
+	margin: 0 auto;
+}
+.shortPyramidUl > li:first-child {
+	margin-top: 12px;
+}
+.longPyramidUl > li {
+	margin-top: 6px;
+}
+.pyramid-li {
+	width: fit-content;
+	margin: 0 auto;
+}
+.miniTitle {
+	font-weight: 600;
+	line-height: 28px;
+	font-size: 15px;
+	color: white;
+	margin-top: 13px;
+}
+.pyramidDesc {
+	color: rgba(117, 127, 147, 1);
+	margin-top: 12px;
+	margin: 12px auto;
+	font-size: 15px;
+	line-height: 28px;
+}
+.longerDesc {
+	max-width: 940px;
+}
+.shorterDesc {
+	max-width: 797px;
+}
+.pyramidNumber {
+	position: absolute;
+	top: 23px;
+	left: 23px;
+}
+
+.pyramid-cards-wrapper {
+	position: relative;
+	margin-top: 250px;
+}
+.pyramid-card {
+	background-color: rgba(32, 35, 42, 1);
+	border-radius: 22.65px;
+	text-align: center;
+	padding: 29px;
+	margin-top: 20px;
+	box-shadow: 0 -4px 60px -4px rgba(0, 0, 0, 1);
+	position: relative;
+}
+.divForAbsolute {
+	position: absolute;
+}
+.smallest {
+	transform: scale(0.5);
+	top: -245px;
+	margin-left: 25%;
+	width: 50%;
+}
+.smaller {
+	transform: scale(0.7);
+	top: -212px;
+	margin-left: 20%;
+	width: 60%;
+}
+.small {
+	transform: scale(0.9);
+	top: -110px;
+	margin-left: 10%;
+	width: 80%;
+}
+.small > div {
+	font-size: xx-small;
+}
+
+.normal {
+	position: static;
+}
+
+/* whyWe start */
+.whyWe-wrapper {
+	margin: 100px 72.5px;
+}
+.whyWe-body {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.whyWe-card {
+	position: relative;
+	background-color: rgba(32, 35, 42, 1);
+	width: 48%;
+	margin-top: 26px;
+	border-radius: 22.65px;
+	padding: 33.11px 30.43px;
+	min-height: 192px;
+}
+.whyWe-foot {
+	position: relative;
+	background-color: rgba(32, 35, 42, 1);
+	border-radius: 22.65px;
+	margin-top: 26px;
+	padding: 33.11px 30.43px 54px;
+	text-align: center;
+}
+.whyWeCardTitle {
+	font-size: 26px;
+	color: white;
+	line-height: 33.54px;
+	font-weight: 600;
+	margin-bottom: 9px;
+}
+.whyWeCardDesc {
+	color: rgba(117, 127, 147, 1);
+	font-size: 15px;
+	line-height: 28px;
+	font-weight: 400;
+	max-width: 528px;
+}
+.whyWeFootDesc {
+	max-width: 688px;
+	margin: 0 auto;
 }
 
 /* footer start */

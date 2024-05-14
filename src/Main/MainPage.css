@@ -30,7 +30,7 @@ body {
 }
 .burgerDiv {
 	border: 2px solid white;
-	padding: 0px 15px 8px;
+	padding: 3px 15px 8px;
 	font-size: 35px;
 	border-radius: 100px;
 }
@@ -80,7 +80,6 @@ body {
 	object-fit: cover;
 	width: 85%;
 	margin: 0 auto;
-	transition: 1s;
 }
 
 .img-btns-wrapper {
