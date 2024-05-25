@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import MainPage from "./Main/MainPage";
+import MmainPage from "./Mmain/MmainPage";
 
 const App = () => {
 	useEffect(() => {
@@ -8,7 +8,7 @@ const App = () => {
 
 	return (
 		<div>
-			<MainPage />
+			<MmainPage />
 		</div>
 	);
 };
