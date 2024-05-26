@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import MmainPage from "./Mmain/MmainPage";
+// import MmainPage from "./Mmain/MmainPage";
+// import BrandStrategy from "./BrandStrategy/BrandStrategy";
+import Naming from "./Naming/Naming";
+// import Logo from "./Logo/Logo";
 
 const App = () => {
 	useEffect(() => {
@@ -8,7 +11,10 @@ const App = () => {
 
 	return (
 		<div>
-			<MmainPage />
+			{/* <MmainPage /> */}
+			{/* <BrandStrategy /> */}
+			<Naming />
+			{/* <Logo /> */}
 		</div>
 	);
 };

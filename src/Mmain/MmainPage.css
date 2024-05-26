@@ -858,23 +858,7 @@ button {
 .mainPageWrapper {
 	display: block;
 }
-.contacts-wrapper {
-	display: none;
-}
-.about-company-wrapper {
-	display: none;
-}
-.ready-cases-wrapper,
-.titlle {
-	display: none;
-}
-.vremya {
-	display: block;
-}
 
-.getInline {
-	display: none;
-}
 .getBlock {
 	display: none;
 }
