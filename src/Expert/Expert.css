@@ -53,98 +53,64 @@ button {
 	padding: 23px 51px;
 }
 
-/* logo wrapper start */
-.logo-wrapper {
+/* expert wrapper start */
+.expert-wrapper {
 	background-color: rgba(23, 25, 32, 1);
 	border-radius: 50px;
-	padding: 40px 0px 50px 55px;
+	padding: 40px 0px 50px 52px;
 	margin: 150px 55px;
 }
 
+.innerHead {
+	margin-right: 55px;
+}
 .main-title {
 	color: white;
-	font-size: 60px;
+	font-weight: 400;
+	font-size: 55px;
 	line-height: 77.4px;
-	font-weight: 400;
 	letter-spacing: 2%;
-	margin-bottom: 6px;
 }
-.main-desc {
-	font-size: 18px;
-	line-height: 35px;
-	font-weight: 400;
-	color: rgba(117, 127, 147, 1);
-	margin-top: 10px;
-	max-width: 1220px;
-}
-
-.innerHeadFoot {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 60px;
-	flex-wrap: wrap;
-}
-.innerHeadCard {
-	border-radius: 30px;
-	padding: 36.5px 48.5px;
-	background-color: rgba(57, 62, 75, 1);
-	width: 49%;
-	text-align: center;
-	color: rgba(206, 211, 224, 1);
-}
-.yellow {
-	padding: 30px 25px;
-	background-color: rgba(251, 236, 28, 1);
-	text-align: left;
-	color: rgba(15, 17, 22, 1);
-}
-.innerCardTitle {
-	font-size: 25px;
-	line-height: 32.25px;
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-.innerCardDesc {
-	font-size: 17px;
-	line-height: 26px;
-	font-weight: 400;
+.yellowFont {
+	color: rgba(251, 236, 28, 1);
 }
 
 /* first part start */
+.first-part {
+	margin-top: 150px;
+	margin-left: 0;
+	margin-right: 55px;
+}
 .generalTitle {
+	color: white;
 	font-size: 40px;
 	line-height: 51.6px;
 	font-weight: 400;
 	letter-spacing: 2%;
-	color: white;
+	margin-bottom: 18px;
 }
 
-.first-part {
-	margin-top: 140px;
-	margin-right: 55px;
-}
-.first-desc {
+.firstSectionDesc {
 	font-size: 18px;
 	line-height: 35px;
-	font-weight: 400;
 	color: rgba(117, 127, 147, 1);
-	max-width: 1230px;
 	margin-top: 18px;
+	max-width: 1250px;
 }
 
-.first-body {
-	display: flex;
-	justify-content: space-between;
+.firstImgWrap {
+	width: 100%;
+	margin: 0 auto;
 	margin-top: 35px;
 }
-.first-body-img {
+.firstSectionImg {
 	display: block;
-	width: 32.5%;
+	width: 100%;
 }
 
 /* second part start */
 .second-part {
-	margin-top: 140px;
+	margin-top: 150px;
 	margin-right: 55px;
 }
 .second-title {
@@ -161,21 +127,14 @@ button {
 .secondBodyItem {
 	background-color: rgba(57, 62, 75, 1);
 	padding: 28px 29px;
-	width: 49.2%;
+	width: 49.1%;
 	border-radius: 15px;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	justify-content: flex-start;
+	align-items: center;
 	gap: 22px;
 }
 
-.flashTitle {
-	color: white;
-	font-size: 20px;
-	line-height: 26px;
-	font-weight: 600;
-	margin-bottom: 5px;
-}
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
 	font-size: 17px;
@@ -188,61 +147,98 @@ button {
 	margin-top: 140px;
 	margin-right: 55px;
 }
-
-.third-body {
+.third-title {
+	margin-bottom: 60px;
+}
+.thirdPartBody {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 60px;
+	flex-wrap: wrap;
 }
-.third-body-item {
-	width: 32.5%;
+.thirdPartItem {
+	width: 32.3%;
 	background-color: rgba(57, 62, 75, 1);
-	padding: 27px 25px;
 	border-radius: 30px;
-	min-height: 320px;
+	padding: 27px 25px;
+	margin-top: 20px;
 }
-
-.thirdInnerTitle {
+.thirdBodyTitle {
 	color: white;
-	font-size: 22px;
-	line-height: 32.25px;
 	font-weight: 500;
-	margin-bottom: 10px;
+	font-size: 25px;
+	line-height: 32.25px;
 }
-.thirdInnerDesc {
-	font-size: 15px;
-	line-height: 24px;
-	font-weight: 400;
+.thirdBodyDesc {
+	margin-top: 10px;
 	color: rgba(206, 211, 224, 1);
+	font-size: 17px;
+	line-height: 26px;
+	font-weight: 400;
 }
 
-.sYellow {
-	background-color: rgba(251, 236, 28, 1);
-	text-align: left;
-}
-.yellowContent {
-	color: rgba(15, 17, 22, 1);
-}
-
-/* fourth part start */
+/* fourth part */
 .fourth-part {
-	margin-top: 140px;
+	margin-top: 150px;
+	margin-right: 55px;
 }
 .fourth-title {
 	margin-bottom: 60px;
 }
-.fourthBody {
+
+.fourth-body {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.fourthBodyItem {
+	background-color: rgba(57, 62, 75, 1);
+	padding: 28px 29px;
+	width: 49.1%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 22px;
+}
+
+.flashTitle {
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 5px;
+}
+
+.flashDesc {
+	color: rgba(206, 211, 224, 1);
+	font-size: 17px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+/* fifth part start */
+.fifth-part {
+	margin-top: 150px;
+}
+.fifth-title {
+	margin-bottom: 60px;
+	max-width: 1110px;
+}
+
+.fifthBody {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 }
 
-.fourthBody::-webkit-scrollbar {
+.fifthBody::-webkit-scrollbar {
 	height: 0px;
 }
 
-.fourthBodyItem {
+.fifthBodyItem {
 	border-radius: 30px;
 	flex: 0 0 auto;
 	margin-right: 15px;
@@ -255,19 +251,19 @@ button {
 	border-radius: 30px;
 }
 
-.fourthBodyTitle {
+.fifthBodyTitle {
 	color: white;
 	font-size: 28px;
 	line-height: 36.12px;
 	font-weight: 400;
 	margin: 30px 0 5px;
 }
-.fourthBodyDesc {
+.fifthBodyDesc {
 	color: rgba(117, 127, 147, 1);
 	font-size: 18px;
 	line-height: 23.22px;
 }
-.fourthBtn {
+.fifthBtn {
 	margin-top: 23px;
 	border: 1.79px solid rgba(117, 127, 147, 1);
 	color: rgba(117, 127, 147, 1);
@@ -279,46 +275,6 @@ button {
 	background-color: inherit;
 }
 
-/* fifth part start */
-.fifth-part {
-	margin-top: 140px;
-	margin-right: 55px;
-}
-.fifth-title {
-	margin-bottom: 60px;
-}
-.fifth-body {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	gap: 20px;
-}
-
-.fifthBodyItem {
-	background-color: rgba(57, 62, 75, 1);
-	padding: 28px 29px;
-	width: 49.1%;
-	border-radius: 15px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 22px;
-}
-
-.flashTitle {
-	color: white;
-	font-size: 20px;
-	line-height: 26px;
-	font-weight: 600;
-	margin-bottom: 5px;
-}
-.flashDesc {
-	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
-	font-weight: 400;
-}
-
 .fifth-part-foot {
 	padding: 54px 45px 45px;
 	background-color: rgba(251, 236, 28, 1);
@@ -326,7 +282,8 @@ button {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 140px;
+	margin-top: 150px;
+	margin-right: 55px;
 }
 
 .fifth-foot-title {
@@ -340,8 +297,7 @@ button {
 	font-size: 17px;
 	line-height: 26px;
 	font-weight: 400;
-	max-width: 580px;
-	color: rgba(15, 17, 22, 1);
+	max-width: 550px;
 }
 .footBtnWrap {
 	display: flex;
@@ -355,7 +311,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	margin-right: 65px;
+	/* margin-right: 65px; */
 	margin-top: 10px;
 }
 

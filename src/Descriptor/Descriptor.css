@@ -53,61 +53,58 @@ button {
 	padding: 23px 51px;
 }
 
-/* logo wrapper start */
-.logo-wrapper {
+/* descriptor wrapper start */
+.descriptor-wrapper {
+	padding: 40px 0px 83px 55px;
 	background-color: rgba(23, 25, 32, 1);
+	margin: 140px 57px 140px 55px;
 	border-radius: 50px;
-	padding: 40px 0px 50px 55px;
-	margin: 150px 55px;
+}
+
+.innerHead {
+	margin-right: 65px;
 }
 
 .main-title {
-	color: white;
 	font-size: 60px;
 	line-height: 77.4px;
 	font-weight: 400;
 	letter-spacing: 2%;
+	color: white;
 	margin-bottom: 6px;
+}
+.yellowText {
+	color: rgba(251, 236, 28, 1);
 }
 .main-desc {
 	font-size: 18px;
-	line-height: 35px;
+	line-height: 23.22px;
 	font-weight: 400;
 	color: rgba(117, 127, 147, 1);
+}
+.mt-10 {
 	margin-top: 10px;
-	max-width: 1220px;
 }
-
 .innerHeadFoot {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 60px;
-	flex-wrap: wrap;
-}
-.innerHeadCard {
-	border-radius: 30px;
-	padding: 36.5px 48.5px;
-	background-color: rgba(57, 62, 75, 1);
-	width: 49%;
-	text-align: center;
-	color: rgba(206, 211, 224, 1);
-}
-.yellow {
-	padding: 30px 25px;
+	padding: 30px;
 	background-color: rgba(251, 236, 28, 1);
-	text-align: left;
+	border-radius: 30px;
+	margin-top: 50px;
 	color: rgba(15, 17, 22, 1);
+	text-align: center;
 }
-.innerCardTitle {
+.mainFootTitle {
 	font-size: 25px;
 	line-height: 32.25px;
 	font-weight: 500;
 	margin-bottom: 10px;
 }
-.innerCardDesc {
+.mainFootDesc {
 	font-size: 17px;
 	line-height: 26px;
 	font-weight: 400;
+	max-width: 1250px;
+	margin: 0 auto;
 }
 
 /* first part start */
@@ -297,7 +294,7 @@ button {
 .fifthBodyItem {
 	background-color: rgba(57, 62, 75, 1);
 	padding: 28px 29px;
-	width: 49.1%;
+	width: 49.2%;
 	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
@@ -340,8 +337,7 @@ button {
 	font-size: 17px;
 	line-height: 26px;
 	font-weight: 400;
-	max-width: 580px;
-	color: rgba(15, 17, 22, 1);
+	max-width: 750px;
 }
 .footBtnWrap {
 	display: flex;
@@ -355,7 +351,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	margin-right: 65px;
+	/* margin-right: 65px; */
 	margin-top: 10px;
 }
 
