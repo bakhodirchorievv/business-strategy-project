@@ -276,7 +276,7 @@ button {
 }
 
 .fifth-part-foot {
-	padding: 54px 45px 45px;
+	padding: 45px 45px 45px;
 	background-color: rgba(251, 236, 28, 1);
 	border-radius: 30px;
 	display: flex;
@@ -290,14 +290,14 @@ button {
 	font-size: 40px;
 	line-height: 51.6px;
 	font-weight: 400;
-	margin-bottom: 15px;
 	letter-spacing: 2%;
 }
 .fifth-foot-desc {
 	font-size: 17px;
 	line-height: 26px;
 	font-weight: 400;
-	max-width: 550px;
+	max-width: 750px;
+	margin-top: 15px;
 }
 .footBtnWrap {
 	display: flex;
