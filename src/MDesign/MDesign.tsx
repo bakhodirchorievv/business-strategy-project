@@ -360,13 +360,12 @@ const MDesign = () => {
 						<h3 className="sixth-foot-title">
 							Готовы преобразить свое видео либо же изображение?
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="sixth-foot-desc">
 								Тогда обращайтесь к нам, и мы покажем вам уникальные возможности
 								<p>Motion Design!</p>
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="sixth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

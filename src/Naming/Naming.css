@@ -57,7 +57,7 @@ button {
 .naming-wrapper {
 	background-color: rgba(23, 25, 32, 1);
 	border-radius: 50px;
-	padding: 40px 58px 50px 52px;
+	padding: 40px 0px 50px 52px;
 	margin: 150px 55px;
 }
 .main-title {
@@ -81,6 +81,7 @@ button {
 .first-part {
 	margin-top: 150px;
 	margin-left: 0;
+	margin-right: 58px;
 }
 .generalTitle {
 	color: white;
@@ -110,6 +111,7 @@ button {
 /* second part start */
 .second-part {
 	margin-top: 150px;
+	margin-right: 58px;
 }
 .second-title {
 	margin-bottom: 60px;
@@ -155,6 +157,7 @@ button {
 /* third part start */
 .third-part {
 	margin-top: 150px;
+	margin-right: 58px;
 }
 .thirdTitle {
 	margin-bottom: 60px;
@@ -180,6 +183,7 @@ button {
 /* fourth part start */
 .fourth-part {
 	margin-top: 150px;
+	margin-right: 58px;
 }
 
 .fourthSectionBody {
@@ -228,6 +232,10 @@ button {
 }
 
 /* fifth part start */
+.fifth-part {
+	margin-top: 150px;
+	margin-right: 58px;
+}
 .fifth-title {
 	margin-bottom: 60px;
 }
@@ -267,6 +275,7 @@ button {
 }
 .sixth-title {
 	margin-bottom: 60px;
+	margin-right: 58px;
 }
 
 .sixthBody {
@@ -321,10 +330,15 @@ button {
 	padding: 54px 45px 45px;
 	background-color: rgba(251, 236, 28, 1);
 	border-radius: 30px;
+	margin-top: 150px;
+	margin-right: 58px;
+}
+
+.getsFlex {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 150px;
+	align-items: flex-start;
 }
 
 .sixth-foot-title {
@@ -340,10 +354,7 @@ button {
 	font-weight: 400;
 	max-width: 580px;
 }
-.footBtnWrap {
-	display: flex;
-	align-items: flex-end;
-}
+
 .sixth-foot-btn {
 	font-size: 19px;
 	line-height: 24.51px;

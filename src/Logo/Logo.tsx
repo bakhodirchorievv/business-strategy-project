@@ -283,13 +283,12 @@ const Logo = () => {
 						<h3 className="fifth-foot-title">
 							Готовы увидеть свой бренд в новом свете?
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="fifth-foot-desc">
 								Свяжитесь с нами сегодня, чтобы начать процесс создания Вашего
 								уникального логотипа.
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="fifth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

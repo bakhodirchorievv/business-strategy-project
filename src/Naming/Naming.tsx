@@ -298,13 +298,12 @@ const Naming = () => {
 						<h3 className="sixth-foot-title">
 							Закажите разработку эффектного названия!
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="sixth-foot-desc">
 								Дайте вашему бренду имя, которое запомнят Если у Вас остались
 								вопросы, оставьте заявку, и мы свяжемся с Вами в ближайшее время
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="sixth-foot-btn">
 								Хочу оригинальный нейминг →
 							</button>

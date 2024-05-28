@@ -53,68 +53,95 @@ button {
 	padding: 23px 51px;
 }
 
-/* site wrapper  start */
-.site-wrapper {
+/* souvenir wrapper start */
+.souvenir-wrapper {
 	background-color: rgba(23, 25, 32, 1);
 	border-radius: 50px;
-	padding: 40px 0px 50px 55px;
+	padding: 40px 0px 50px 52px;
 	margin: 150px 55px;
 }
 
+.innerHead {
+	margin-right: 55px;
+}
 .main-title {
-	font-size: 60px;
-	line-height: 77.4px;
-	font-weight: 400;
-	letter-spacing: 2%;
 	color: white;
-}
-.main-desc {
-	margin-top: 18px;
-	font-size: 18px;
-	line-height: 23.22px;
 	font-weight: 400;
-	color: rgba(117, 127, 147, 1);
-	max-width: 1150px;
+	font-size: 55px;
+	line-height: 77.4px;
+	letter-spacing: 2%;
 }
-.yellowDesc {
+.yellowFont {
 	color: rgba(251, 236, 28, 1);
+}
+.title-desc {
+	color: rgba(117, 127, 147, 1);
+	font-size: 18px;
+	line-height: 35px;
+	margin-top: 6px;
+	max-width: 1220px;
 }
 
 /* first part start */
 .first-part {
-	margin-top: 60px;
+	margin-top: 150px;
+	margin-left: 0;
 	margin-right: 55px;
 }
-
 .generalTitle {
+	color: white;
 	font-size: 40px;
 	line-height: 51.6px;
 	font-weight: 400;
 	letter-spacing: 2%;
-	color: white;
+	margin-bottom: 18px;
 }
 
-.first-body {
+.firstSectionDesc {
+	font-size: 18px;
+	line-height: 35px;
+	color: rgba(117, 127, 147, 1);
+	margin-top: 18px;
+	max-width: 1100px;
+}
+
+.firstImgWrap {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+.firstSectionImg {
+	display: block;
+	width: 100%;
+}
+
+/* second part start */
+.second-part {
+	margin-top: 140px;
+	margin-right: 55px;
+}
+
+.second-body {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 60px;
 }
-.first-body-item {
+.second-body-item {
 	width: 32.5%;
 	background-color: rgba(57, 62, 75, 1);
 	padding: 27px 25px;
 	border-radius: 30px;
-	min-height: 320px;
+	min-height: 300px;
 }
 
-.firstInnerTitle {
+.secondInnerTitle {
 	color: white;
 	font-size: 22px;
 	line-height: 32.25px;
 	font-weight: 500;
 	margin-bottom: 10px;
 }
-.firstInnerDesc {
+.secondInnerDesc {
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: 400;
@@ -126,74 +153,6 @@ button {
 }
 .yellowContent {
 	color: rgba(15, 17, 22, 1);
-}
-
-.first-body {
-	display: flex;
-	justify-content: space-between;
-	gap: 5px;
-	margin-top: 75px;
-}
-.firstBodyImg {
-	width: 33%;
-}
-
-/* second part start */
-.second-part {
-	margin-top: 150px;
-	margin-right: 55px;
-}
-
-.secondSectionBody {
-	margin: 50px 0;
-	display: flex;
-	justify-content: space-between;
-}
-
-.secondBodyItem {
-	width: 33%;
-}
-
-.secondInnerItem {
-	background-color: rgba(57, 62, 75, 1);
-	margin-top: 20px;
-	border-radius: 30px;
-	padding: 22px 20px;
-	min-height: 280px;
-}
-.TwoInOne {
-	margin: 0px 20px;
-	margin-top: 20px;
-	min-height: 580px;
-	background-color: rgba(251, 236, 28, 1);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.TwoInOne > .secondInnerTitle,
-.TwoInOne > .secondInnerDesc {
-	color: rgba(15, 17, 22, 1);
-	text-align: center;
-}
-.simpleBack {
-	height: 580px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-
-.secondInnerTitle {
-	color: white;
-	font-size: 25px;
-	line-height: 32.25px;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-.secondInnerDesc {
-	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
 }
 
 /* third part start */
@@ -218,23 +177,19 @@ button {
 	width: 49.1%;
 	border-radius: 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 22px;
 }
 
-.flash {
-	width: 92px;
-	height: 85px;
-}
-
 .flashTitle {
-	color: white;
 	font-size: 20px;
 	line-height: 26px;
 	font-weight: 600;
+	color: white;
 	margin-bottom: 5px;
 }
+
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
 	font-size: 17px;
@@ -242,36 +197,65 @@ button {
 	font-weight: 400;
 }
 
-.thirdPartLastDesc {
-	font-size: 18px;
-	line-height: 35px;
-	color: rgba(117, 127, 147, 1);
-	font-weight: 400;
-	margin-top: 60px;
-	max-width: 1230px;
-}
-
 /* fourth part start */
 .fourth-part {
 	margin-top: 150px;
+	margin-right: 55px;
 }
 .fourth-title {
+	margin-bottom: 60px;
+}
+.fourthMainImg {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.fourth-foot {
+	margin-top: 90px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.fourth-foot-item {
+	width: 32.3%;
+	background-color: rgba(57, 62, 75, 1);
+	display: flex;
+	gap: 22px;
+	align-items: center;
+	padding: 25px 24px;
+	border-radius: 28px 29px;
+}
+.fourth-foot-desc {
+	color: rgba(206, 211, 224, 1);
+	font-size: 17px;
+	line-height: 26px;
+	font-weight: 400;
+	max-width: 200px;
+}
+
+/* fifth part start */
+.fifth-part {
+	margin-top: 150px;
+}
+.fifth-title {
 	margin-bottom: 60px;
 	max-width: 1110px;
 }
 
-.fourthBody {
+.fifthBody {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 }
 
-.fourthBody::-webkit-scrollbar {
+.fifthBody::-webkit-scrollbar {
 	height: 0px;
 }
 
-.fourthBodyItem {
+.fifthBodyItem {
 	border-radius: 30px;
 	flex: 0 0 auto;
 	margin-right: 15px;
@@ -284,19 +268,19 @@ button {
 	border-radius: 30px;
 }
 
-.fourthBodyTitle {
+.fifthBodyTitle {
 	color: white;
 	font-size: 28px;
 	line-height: 36.12px;
 	font-weight: 400;
 	margin: 30px 0 5px;
 }
-.fourthBodyDesc {
+.fifthBodyDesc {
 	color: rgba(117, 127, 147, 1);
 	font-size: 18px;
 	line-height: 23.22px;
 }
-.fourthBtn {
+.fifthBtn {
 	margin-top: 23px;
 	border: 1.79px solid rgba(117, 127, 147, 1);
 	color: rgba(117, 127, 147, 1);
@@ -308,7 +292,7 @@ button {
 	background-color: inherit;
 }
 
-.fourth-part-foot {
+.fifth-part-foot {
 	padding: 54px 45px 45px;
 	background-color: rgba(251, 236, 28, 1);
 	border-radius: 30px;
@@ -323,21 +307,21 @@ button {
 	align-items: flex-start;
 }
 
-.fourth-foot-title {
+.fifth-foot-title {
 	font-size: 40px;
 	line-height: 51.6px;
 	font-weight: 400;
 	margin-bottom: 15px;
 	letter-spacing: 2%;
 }
-.fourth-foot-desc {
+.fifth-foot-desc {
 	font-size: 17px;
 	line-height: 26px;
 	font-weight: 400;
 	max-width: 550px;
 }
 
-.fourth-foot-btn {
+.fifth-foot-btn {
 	font-size: 19px;
 	line-height: 24.51px;
 	border: none;

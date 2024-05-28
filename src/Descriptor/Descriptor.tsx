@@ -263,14 +263,13 @@ const Descriptor = () => {
 						<h3 className="fifth-foot-title">
 							Самое время добавить гласности Вашему бизнесу.
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="fifth-foot-desc">
 								Наша команда готова помочь Вам создать уникальные и
 								запоминающиеся атрибуты, которые станут ключом к Вашему успеху.
 								Не упустите шанс поднять Ваш бренд на новый уровень!
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="fifth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

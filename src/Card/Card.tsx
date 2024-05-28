@@ -362,13 +362,12 @@ const Card = () => {
 						<h3 className="sixth-foot-title">
 							Закажите разработку оригинального сайта-визитки!
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="sixth-foot-desc">
 								Остались вопросы? Отправьте заявку, и мы свяжемся с Вами в
 								ближайшее время
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="sixth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

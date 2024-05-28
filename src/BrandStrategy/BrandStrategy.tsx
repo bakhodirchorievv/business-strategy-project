@@ -104,17 +104,16 @@ const BrandStrategy = () => {
 					</div>
 
 					<div className="first-section-foot">
-						<div>
-							<h3 className="first-foot-title">
-								Нужна стратегия развития бренда?
-							</h3>
+						<h3 className="first-foot-title">
+							Нужна стратегия развития бренда?
+						</h3>
+						<div className="getsFlex">
 							<p className="first-foot-desc">
 								Хотите построить сильный бренд, которому будут доверять?
 								Заполните бриф, и мы свяжемся с вами в скором времени. Сделайте
 								шаг навстречу успешному будущему вашей компании!
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="first-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

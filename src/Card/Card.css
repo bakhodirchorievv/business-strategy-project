@@ -333,11 +333,15 @@ button {
 	padding: 54px 45px 45px;
 	background-color: rgba(251, 236, 28, 1);
 	border-radius: 30px;
+	margin-top: 150px;
+	margin-right: 55px;
+}
+
+.getsFlex {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 150px;
-	margin-right: 55px;
+	align-items: flex-start;
 }
 
 .sixth-foot-title {
@@ -353,10 +357,7 @@ button {
 	font-weight: 400;
 	max-width: 600px;
 }
-.footBtnWrap {
-	display: flex;
-	align-items: flex-end;
-}
+
 .sixth-foot-btn {
 	font-size: 19px;
 	line-height: 24.51px;

@@ -259,14 +259,13 @@ const Packing = () => {
 						<h3 className="fourth-foot-title">
 							Хотите, чтобы Ваш продукт выделялся из толпы?
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="fourth-foot-desc">
 								Не упустите возможность сделать Ваш бренд более привлекательным
 								и узнаваемым на рынке! Свяжитесь с нами прямо сейчас, чтобы
 								начать работу над уникальной упаковкой вашего продукта.
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="fourth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

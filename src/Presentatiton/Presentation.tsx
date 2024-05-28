@@ -1,7 +1,7 @@
-import "./Expert.css";
-import "./ExpertResponsive.css";
+import "./Presentation.css";
+import "./PresentResponsive.css";
 
-const Expert = () => {
+const Presentation = () => {
 	return (
 		<>
 			<header className="header">
@@ -28,24 +28,35 @@ const Expert = () => {
 				</div>
 			</header>
 
-			<div className="expert-wrapper">
+			<div className="souvenir-wrapper">
 				<div className="innerHead">
 					<h2 className="main-title">
-						<span className="yellowFont">Эксперты </span>мнения и соцсети
+						Дизайн
+						<span className="yellowFont"> Презентаций</span>
 					</h2>
+					<p className="title-desc">
+						Добро пожаловать в <span className="yellowFont">Time to</span>,
+						вашего надежного партнера в мире мерчандайзинга и сувенирной
+						продукции.
+					</p>
 				</div>
 
 				<div className="first-part">
-					<h3 className="generalTitle first-title">О нас</h3>
+					<h3 className="generalTitle first-title">Что такое презентация?</h3>
 					<p className="firstSectionDesc">
-						Мы- команда экспертов по продвижению твоего бизнеса в социальных
-						сетях. Наша цель - помочь тебе увеличить узнаваемость бренда,
-						привлечь новых клиентов и повысить продажи.
+						В мире бизнеса существует множество важных аспектов, но одним из
+						ключевых является эффективная коммуникация с клиентами и партнерами.
+						И нет лучшего способа привлечь их внимание, чем качественная
+						презентация. Цель каждой презентации – заинтересовать аудиторию и
+						передать информацию с максимальной эффективностью. Дизайн
+						презентаций — это неотъемлемая часть успешной коммуникации в
+						различных сферах бизнеса. Готовы заявить миру о вашем бизнесе с
+						помощью уникальной презентации? Тогда позвольте нам помочь!
 					</p>
 
 					<div className="firstImgWrap">
 						<img
-							src="/business-strategy-project/MainPage/ExpertMainImg.png"
+							src="/business-strategy-project/MainPage/presentationMainImg.png"
 							alt=""
 							className="firstSectionImg"
 						/>
@@ -53,9 +64,7 @@ const Expert = () => {
 				</div>
 
 				<div className="second-part">
-					<h3 className="generalTitle second-title">
-						Что дает бизнесу продвижение и реклама в социальных сетях
-					</h3>
+					<h3 className="generalTitle second-title">Наши преимущества</h3>
 					<div className="second-body">
 						<div className="secondBodyItem">
 							<img
@@ -64,18 +73,13 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">Увеличение узнаваемости бренда;</p>
-							</div>
-						</div>
-						<div className="secondBodyItem">
-							<img
-								src="/business-strategy-project/MainPage/flash.png"
-								alt=""
-								className="flash"
-							/>
-							<div className="flashInfo">
+								<h4 className="flashTitle">Индивидуальный подход</h4>
 								<p className="flashDesc">
-									Создание дополнительного канала продаж
+									Мы понимаем, что каждый бизнес уникален, поэтому мы подходим к
+									каждому проекту индивидуально. Наша команда работает тесно с
+									клиентами, чтобы понять их потребности, цели и особенности
+									бренда, что позволяет нам создавать презентации, полностью
+									соответствующие их ожиданиям.
 								</p>
 							</div>
 						</div>
@@ -86,9 +90,13 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
+								<h4 className="flashTitle">Профессионализм</h4>
 								<p className="flashDesc">
-									Возможность установить контакт с потенциальными клиентами и
-									понять их потребности
+									Наши дизайнеры обладают богатым опытом в создании презентаций
+									для различных отраслей бизнеса. Мы постоянно отслеживаем
+									последние тенденции в дизайне и визуализации данных, чтобы
+									гарантировать, что наши клиенты получают качественные и
+									современные презентации.
 								</p>
 							</div>
 						</div>
@@ -99,20 +107,13 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
+								<h4 className="flashTitle">Полный цикл услуг</h4>
 								<p className="flashDesc">
-									Привлечение дополнительного трафика на веб-сайт.
-								</p>
-							</div>
-						</div>
-						<div className="secondBodyItem">
-							<img
-								src="/business-strategy-project/MainPage/flash.png"
-								alt=""
-								className="flash"
-							/>
-							<div className="flashInfo">
-								<p className="flashDesc">
-									Повышение лояльности клиентов и доверия к бренду
+									Мы предоставляем полный цикл услуг, начиная с разработки
+									концепции и заканчивая подготовкой презентаций в нужном
+									формате. Наша команда экспертов поддерживает клиентов на всех
+									этапах работы, гарантируя качественный результат и
+									удовлетворение всех потребностей.
 								</p>
 							</div>
 						</div>
@@ -120,149 +121,86 @@ const Expert = () => {
 				</div>
 
 				<div className="third-part">
-					<h3 className="generalTitle third-title">
-						Наши ключевые направления
-					</h3>
-
-					<div className="thirdPartBody">
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">
-								Поиск и анализ блогеров с целевой аудиторией
-							</h4>
+					<h3 className="generalTitle third-title">Процесс работы</h3>
+					<div className="thirdBody">
+						<div className="thirdBodyItem">
+							<h4 className="thirdBodyTitle">Консультация</h4>
 							<p className="thirdBodyDesc">
-								Наш сервис проводит автоматический анализ вашей целевой
-								аудитории и подбирает наиболее подходящих блогеров для
-								эффективного продвижения вашего продукта.{" "}
+								 Мы начинаем с глубокого понимания потребностей и целей клиента.
+								В ходе консультации мы обсуждаем детали проекта, выявляем
+								основные сообщения, целевую аудиторию и планируем стратегию
+								презентации.
 							</p>
 						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Закупка рекламы</h4>
+						<div className="thirdBodyItem">
+							<h4 className="thirdBodyTitle">Разработка концепции</h4>
 							<p className="thirdBodyDesc">
-								Мы предлагаем полное сопровождение и помощь в продвижении вашей
-								рекламы, чтобы достичь максимального эффекта. Мы работаем с
-								различными социальными сетями, включая Instagram, VK, Facebook и
-								другие
+								Наши дизайнеры создают уникальную концепцию презентации,
+								учитывая структуру, дизайн и основные сообщения. Мы предлагаем
+								клиентам различные варианты концепций и рекомендации для
+								достижения оптимального результата.
 							</p>
 						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Вирусная реклама</h4>
+						<div className="thirdBodyItem">
+							<h4 className="thirdBodyTitle">Доработка и утверждение</h4>
 							<p className="thirdBodyDesc">
-								Наш сервис может помочь вам в создании и распространении
-								вирусной рекламы через социальные сети, подбирая подходящих
-								блогеров и создавая контент, который будет привлекать внимание
-								пользователей.
+								 Мы предоставляем клиентам возможность для комментариев и
+								корректировок. Мы внимательно слушаем обратную связь и вносим
+								необходимые изменения, чтобы презентация соответствовала
+								ожиданиям клиента.
 							</p>
 						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Дизайн</h4>
+						<div className="thirdBodyItem">
+							<h4 className="thirdBodyTitle">Итоговая подготовка</h4>
 							<p className="thirdBodyDesc">
-								Мы разработаем для вас качественный дизайн для социальных сетей,
-								который будет соответствовать вашим потребностям и поможет
-								выделиться среди конкурентов.
-							</p>
-						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Крауд маркетинг</h4>
-							<p className="thirdBodyDesc">
-								Мы предоставляем услуги крауд-маркетинга, способствующие
-								привлечению внимания широкой аудитории к вашему бренду или
-								продукту, а также формированию мощного сообщества сторонников.
-							</p>
-						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Посев</h4>
-							<p className="thirdBodyDesc">
-								Наша команда профессионалов разместит рекламные посты от вашего
-								имени в самых актуальных группах и сообществах, чтобы увеличить
-								узнаваемость и привлечь новых клиентов.
+								После утверждения концепции мы окончательно оформляем
+								презентацию и готовим ее к передаче в нужном формате. Мы
+								гарантируем, что презентация будет готова к использованию на
+								конференциях, встречах или в онлайн-формате.
 							</p>
 						</div>
 					</div>
 				</div>
 
 				<div className="fourth-part">
-					<h3 className="generalTitle fourth-title">
-						Как мы создаем стратегию, которая работает
-					</h3>
-					<div className="fourth-body">
-						<div className="fourthBodyItem">
+					<h3 className="generalTitle fourth-title">Нам доверяют</h3>
+					<img
+						src="/business-strategy-project/MainPage/fifth-image.png"
+						alt=""
+						className="fourthMainImg"
+					/>
+					<div className="fourth-foot">
+						<div className="fourth-foot-item">
 							<img
-								src="/business-strategy-project/MainPage/flash.png"
+								src="/business-strategy-project/MainPage/fifth-first.png"
 								alt=""
-								className="flash"
+								className="fourth-foot-img"
 							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Сбор информации</h4>
-								<p className="flashDesc">
-									Обсуждение ключевой информации с клиентом и заполнение брифа
+							<div>
+								<p className="fourth-foot-desc">
+									Работаем в индустрии брендинга с года
 								</p>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
+						<div className="fourth-foot-item">
 							<img
-								src="/business-strategy-project/MainPage/flash.png"
+								src="/business-strategy-project/MainPage/fifth-second.png"
 								alt=""
-								className="flash"
+								className="fourth-foot-img"
 							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Планирование</h4>
-								<p className="flashDesc">
-									Исследование целевой аудитории и конкурентов, разработка
-									стратегии
-								</p>
+							<div>
+								<p className="fourth-foot-desc">Реализовано более проектов</p>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
+						<div className="fourth-foot-item">
 							<img
-								src="/business-strategy-project/MainPage/flash.png"
+								src="/business-strategy-project/MainPage/fifth-third.png"
 								alt=""
-								className="flash"
+								className="fourth-foot-img"
 							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Создание контента</h4>
-								<p className="flashDesc">
-									Разработка визуального концепта и «фундамента» страницы -
-									контента
-								</p>
-							</div>
-						</div>
-						<div className="fourthBodyItem">
-							<img
-								src="/business-strategy-project/MainPage/flash.png"
-								alt=""
-								className="flash"
-							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Публикация</h4>
-								<p className="flashDesc">
-									Управление социальными сетями, постинг и анализ
-								</p>
-							</div>
-						</div>
-						<div className="fourthBodyItem">
-							<img
-								src="/business-strategy-project/MainPage/flash.png"
-								alt=""
-								className="flash"
-							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Привлечение трафика</h4>
-								<p className="flashDesc">
-									Таргетированная реклама, сотрудничество с блогерами,
-									проведение розыгрышей, кросс-маркетинг
-								</p>
-							</div>
-						</div>
-						<div className="fourthBodyItem">
-							<img
-								src="/business-strategy-project/MainPage/flash.png"
-								alt=""
-								className="flash"
-							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Отчетность</h4>
-								<p className="flashDesc">
-									Анализ и презентация результатов работы
+							<div>
+								<p className="fourth-foot-desc">
+									Более компаний обратились к нам
 								</p>
 							</div>
 						</div>
@@ -294,12 +232,10 @@ const Expert = () => {
 					</div>
 
 					<div className="fifth-part-foot">
-						<h3 className="fifth-foot-title">Оставьте заявку!</h3>
+						<h3 className="fifth-foot-title">Не откладывайте успех на потом</h3>
 						<div className="getsFlex">
 							<p className="fifth-foot-desc">
-								 наша команда экспертов превратит ваши концепции в
-								запоминающуюся и оригинальную рекламу, которая эффективно
-								подчеркнет уникальность вашего бренда.
+								Свяжитесь с нами прямо сейчас и начнем работу!
 							</p>
 
 							<button className="fifth-foot-btn">Заполнить бриф →</button>
@@ -451,4 +387,4 @@ const Expert = () => {
 	);
 };
 
-export default Expert;
+export default Presentation;

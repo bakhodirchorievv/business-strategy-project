@@ -1,7 +1,7 @@
-import "./Expert.css";
-import "./ExpertResponsive.css";
+import "./Television.css";
+import "./TeleResponsive.css";
 
-const Expert = () => {
+const Television = () => {
 	return (
 		<>
 			<header className="header">
@@ -28,24 +28,36 @@ const Expert = () => {
 				</div>
 			</header>
 
-			<div className="expert-wrapper">
+			<div className="television-wrapper">
 				<div className="innerHead">
 					<h2 className="main-title">
-						<span className="yellowFont">Эксперты </span>мнения и соцсети
+						<span className="yellowFont">Реклама </span>
+						на телевидении
 					</h2>
+					<p className="title-desc">
+						Компания "Наша Реклама" рада представить вам новую возможность для
+						эффективного продвижения вашего бренда! Теперь вы можете разместить
+						свою рекламу на самых популярных телеканалах!
+					</p>
 				</div>
 
 				<div className="first-part">
-					<h3 className="generalTitle first-title">О нас</h3>
+					<h4 className="generalTitle first-title">О нас</h4>
+
 					<p className="firstSectionDesc">
-						Мы- команда экспертов по продвижению твоего бизнеса в социальных
-						сетях. Наша цель - помочь тебе увеличить узнаваемость бренда,
-						привлечь новых клиентов и повысить продажи.
+						Телевизионная реклама используется для разнообразного воздействия на
+						аудиторию. Она представляет визуальные образы в динамике, что
+						привлекает внимание зрителей и оказывает комплексное воздействие.
+					</p>
+					<p className="firstSectionDesc">
+						Целью телерекламы является не только продемонстрировать продукт или
+						услугу, но и показать их применение, объяснить функциональные
+						особенности и передать ощущения от использования.
 					</p>
 
 					<div className="firstImgWrap">
 						<img
-							src="/business-strategy-project/MainPage/ExpertMainImg.png"
+							src="/business-strategy-project/MainPage/televisionMainImg.png"
 							alt=""
 							className="firstSectionImg"
 						/>
@@ -54,7 +66,7 @@ const Expert = () => {
 
 				<div className="second-part">
 					<h3 className="generalTitle second-title">
-						Что дает бизнесу продвижение и реклама в социальных сетях
+						Рекламу на ТВ используют для
 					</h3>
 					<div className="second-body">
 						<div className="secondBodyItem">
@@ -64,7 +76,7 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">Увеличение узнаваемости бренда;</p>
+								<p className="flashDesc">продвижения товаров и услуг</p>
 							</div>
 						</div>
 						<div className="secondBodyItem">
@@ -74,9 +86,7 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
-									Создание дополнительного канала продаж
-								</p>
+								<p className="flashDesc">увеличения узнаваемости бренда</p>
 							</div>
 						</div>
 						<div className="secondBodyItem">
@@ -86,10 +96,7 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
-									Возможность установить контакт с потенциальными клиентами и
-									понять их потребности
-								</p>
+								<p className="flashDesc">привлечения новых клиентов</p>
 							</div>
 						</div>
 						<div className="secondBodyItem">
@@ -99,9 +106,7 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
-									Привлечение дополнительного трафика на веб-сайт.
-								</p>
+								<p className="flashDesc">стимулирования продаж</p>
 							</div>
 						</div>
 						<div className="secondBodyItem">
@@ -111,198 +116,125 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
-									Повышение лояльности клиентов и доверия к бренду
+								<p className="flashDesc">формирования лояльности</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="secondPartBottom">
+						<h2 className="generalTitle">Что мы предлагаем?</h2>
+						<div className="bottomBody">
+							<div className="bottomItem">
+								<h4 className="bottomItemTitle">Широкий охват</h4>
+								<p className="bottomItemDesc">
+									Мы сотрудничаем с разнообразными каналами и выбираем
+									оптимальные временные слоты, чтобы ваша реклама была замечена
+									максимальным числом зрителей.
 								</p>
 							</div>
+							<div className="bottomItem">
+								<h4 className="bottomItemTitle">Индивидуальный подход</h4>
+								<p className="bottomItemDesc">
+									Наш коллектив экспертов готов помочь вам создать рекламную
+									стратегию, идеально отвечающую вашим требованиям и финансовым
+									возможностям.
+								</p>
+							</div>
+						</div>
+						<div className="bottomFoot">
+							<h4 className="bottomItemTitle bottomFootTitle">
+								Результативность
+							</h4>
+							<p className="bottomFootDesc">
+								Наша цель - не просто разместить вашу рекламу на ТВ, но и
+								обеспечить ее успешное исполнение. Мы стремимся к тому, чтобы
+								каждая секунда вашей рекламы была использована наиболее
+								эффективно, чтобы привлечь внимание, увеличить узнаваемость
+								вашего бренда и поднять продажи или конверсию.
+							</p>
 						</div>
 					</div>
 				</div>
 
 				<div className="third-part">
 					<h3 className="generalTitle third-title">
-						Наши ключевые направления
+						Какие инструменты для разработки телевизионной рекламы мы
+						используем?
 					</h3>
 
-					<div className="thirdPartBody">
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">
-								Поиск и анализ блогеров с целевой аудиторией
-							</h4>
-							<p className="thirdBodyDesc">
-								Наш сервис проводит автоматический анализ вашей целевой
-								аудитории и подбирает наиболее подходящих блогеров для
-								эффективного продвижения вашего продукта.{" "}
-							</p>
-						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Закупка рекламы</h4>
-							<p className="thirdBodyDesc">
-								Мы предлагаем полное сопровождение и помощь в продвижении вашей
-								рекламы, чтобы достичь максимального эффекта. Мы работаем с
-								различными социальными сетями, включая Instagram, VK, Facebook и
-								другие
-							</p>
-						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Вирусная реклама</h4>
-							<p className="thirdBodyDesc">
-								Наш сервис может помочь вам в создании и распространении
-								вирусной рекламы через социальные сети, подбирая подходящих
-								блогеров и создавая контент, который будет привлекать внимание
-								пользователей.
-							</p>
-						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Дизайн</h4>
-							<p className="thirdBodyDesc">
-								Мы разработаем для вас качественный дизайн для социальных сетей,
-								который будет соответствовать вашим потребностям и поможет
-								выделиться среди конкурентов.
-							</p>
-						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Крауд маркетинг</h4>
-							<p className="thirdBodyDesc">
-								Мы предоставляем услуги крауд-маркетинга, способствующие
-								привлечению внимания широкой аудитории к вашему бренду или
-								продукту, а также формированию мощного сообщества сторонников.
-							</p>
-						</div>
-						<div className="thirdPartItem">
-							<h4 className="thirdBodyTitle">Посев</h4>
-							<p className="thirdBodyDesc">
-								Наша команда профессионалов разместит рекламные посты от вашего
-								имени в самых актуальных группах и сообществах, чтобы увеличить
-								узнаваемость и привлечь новых клиентов.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div className="fourth-part">
-					<h3 className="generalTitle fourth-title">
-						Как мы создаем стратегию, которая работает
-					</h3>
-					<div className="fourth-body">
-						<div className="fourthBodyItem">
+					{/*repetition*/}
+					<div className="second-body">
+						<div className="secondBodyItem">
 							<img
 								src="/business-strategy-project/MainPage/flash.png"
 								alt=""
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<h4 className="flashTitle">Сбор информации</h4>
+								<h4 className="flashTitle">Видеоматериалы</h4>
 								<p className="flashDesc">
-									Обсуждение ключевой информации с клиентом и заполнение брифа
+									Работаем до согласования каждого этапа. Кайфуем от процесса
+									работы и результата, который выдаем.
 								</p>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
+						<div className="secondBodyItem">
 							<img
 								src="/business-strategy-project/MainPage/flash.png"
 								alt=""
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<h4 className="flashTitle">Планирование</h4>
+								<h4 className="flashTitle">Звуковое оформление</h4>
 								<p className="flashDesc">
-									Исследование целевой аудитории и конкурентов, разработка
-									стратегии
+									Быстро включаемся и работаем по целям и задачам клиента.
+									Знаем, что и как делать для получения результата.
 								</p>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
+						<div className="secondBodyItem">
 							<img
 								src="/business-strategy-project/MainPage/flash.png"
 								alt=""
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<h4 className="flashTitle">Создание контента</h4>
+								<h4 className="flashTitle">Изображения</h4>
 								<p className="flashDesc">
-									Разработка визуального концепта и «фундамента» страницы -
-									контента
+									Дружелюбный сервис. Всегда выслушиваем все ваши пожелания и
+									искренне хотим осуществить вам
 								</p>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
+						<div className="secondBodyItem">
 							<img
 								src="/business-strategy-project/MainPage/flash.png"
 								alt=""
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<h4 className="flashTitle">Публикация</h4>
+								<h4 className="flashTitle">Текст</h4>
 								<p className="flashDesc">
-									Управление социальными сетями, постинг и анализ
-								</p>
-							</div>
-						</div>
-						<div className="fourthBodyItem">
-							<img
-								src="/business-strategy-project/MainPage/flash.png"
-								alt=""
-								className="flash"
-							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Привлечение трафика</h4>
-								<p className="flashDesc">
-									Таргетированная реклама, сотрудничество с блогерами,
-									проведение розыгрышей, кросс-маркетинг
-								</p>
-							</div>
-						</div>
-						<div className="fourthBodyItem">
-							<img
-								src="/business-strategy-project/MainPage/flash.png"
-								alt=""
-								className="flash"
-							/>
-							<div className="flashInfo">
-								<h4 className="flashTitle">Отчетность</h4>
-								<p className="flashDesc">
-									Анализ и презентация результатов работы
+									Работа с нуля. У нас целая команда специалистов – дизайнеров,
+									копирайтеров и аналитиков, которая способна создать уникальную
+									презентацию конкретно для вас
 								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div className="fifth-part">
-					<h3 className="generalTitle fifth-title">Портфолио</h3>
-
-					<div className="fifthBody">
-						<div className="fifthBodyItem">
-							<div className="whiteBack"></div>
-							<h3 className="fifthBodyTitle">Пропорция</h3>
-							<p className="fifthBodyDesc">Салон красоты</p>
-							<button className="fifthBtn">Сайт</button>
-						</div>
-						<div className="fifthBodyItem">
-							<div className="whiteBack"></div>
-							<h3 className="fifthBodyTitle">Пропорция</h3>
-							<p className="fifthBodyDesc">Салон красоты</p>
-							<button className="fifthBtn">Сайт</button>
-						</div>
-						<div className="fifthBodyItem">
-							<div className="whiteBack"></div>
-							<h3 className="fifthBodyTitle">Пропорция</h3>
-							<p className="fifthBodyDesc">Салон красоты</p>
-							<button className="fifthBtn">Сайт</button>
-						</div>
-					</div>
-
-					<div className="fifth-part-foot">
-						<h3 className="fifth-foot-title">Оставьте заявку!</h3>
+					{/*repetition*/}
+					<div className="third-part-foot">
+						<h3 className="third-foot-title">
+							Оставьте заявку, и мы обязательно свяжемся с вами!
+						</h3>
 						<div className="getsFlex">
-							<p className="fifth-foot-desc">
-								 наша команда экспертов превратит ваши концепции в
-								запоминающуюся и оригинальную рекламу, которая эффективно
-								подчеркнет уникальность вашего бренда.
+							<p className="third-foot-desc">
+								Наша команда готова превратить ваши идеи в яркую и
+								запоминающуюся телевизионную рекламу, которая подчеркнет
+								уникальность вашего бренда.
 							</p>
 
-							<button className="fifth-foot-btn">Заполнить бриф →</button>
+							<button className="third-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>
 				</div>
@@ -451,4 +383,4 @@ const Expert = () => {
 	);
 };
 
-export default Expert;
+export default Television;

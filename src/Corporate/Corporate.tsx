@@ -301,13 +301,12 @@ const Corporate = () => {
 						<h3 className="sixth-foot-title">
 							Закажите разработку эффектного фирменного стиля!
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="sixth-foot-desc">
 								Дайте вашему бренду образ, который оставит приятное впечатление
 								и запомнится вашим клиентам
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="sixth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

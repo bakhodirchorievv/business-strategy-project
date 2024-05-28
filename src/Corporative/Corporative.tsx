@@ -328,13 +328,12 @@ const Corporative = () => {
 						<h3 className="sixth-foot-title">
 							Закажите разработку функционального сайта у нас!
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="sixth-foot-desc">
 								Дайте вашему бизнесу дополнительное преимущество, которое
 								повысит ваше положение на рынке в глазах клиентов
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="sixth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

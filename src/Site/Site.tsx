@@ -286,13 +286,12 @@ const Site = () => {
 						<h3 className="fourth-foot-title">
 							Закажите разработку брендбука или гайдлайна!
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="fourth-foot-desc">
 								Если у Вас остались вопросы, оставьте заявку, и мы свяжемся с
 								Вами в ближайшее время
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="fourth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

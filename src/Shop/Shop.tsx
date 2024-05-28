@@ -320,13 +320,12 @@ const Shop = () => {
 						<h3 className="sixth-foot-title">
 							Закажите разработку функционального сайта у нас!
 						</h3>
-						<div>
+						<div className="getsFlex">
 							<p className="sixth-foot-desc">
 								Дайте вашему бизнесу возможность получить новый поток клиентов и
 								увеличить прибыль
 							</p>
-						</div>
-						<div className="footBtnWrap">
+
 							<button className="sixth-foot-btn">Заполнить бриф →</button>
 						</div>
 					</div>

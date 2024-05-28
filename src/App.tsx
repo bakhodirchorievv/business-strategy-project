@@ -1,5 +1,11 @@
 import { useEffect } from "react";
-import Expert from "./Expert/Expert";
+// import Television from "./Television/Television";
+// import Radio from "./Radio/Radio";
+import Native from "./Native/Native";
+// import Partner from "./Partner/Partner";
+// import Presentation from "./Presentatiton/Presentation";
+// import Souvenir from "./Souvenir/Souvenir";
+// import Expert from "./Expert/Expert";
 // import Shop from "./Shop/Shop";
 // import Corporative from "./Corporative/Corporative";
 // import Card from "./Card/Card";
@@ -34,7 +40,13 @@ const App = () => {
 			{/* <Card /> */}
 			{/* <Corporative /> */}
 			{/* <Shop /> */}
-			<Expert />
+			{/* <Expert /> */}
+			{/* <Souvenir /> */}
+			{/* <Presentation /> */}
+			{/* <Partner /> */}
+			{/* <Television /> */}
+			{/* <Radio /> */}
+			<Native />
 		</div>
 	);
 };
