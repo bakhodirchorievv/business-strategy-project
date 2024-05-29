@@ -17,9 +17,8 @@ button {
 }
 
 /* header start */
-.head-father {
+.bottomOfHeader {
 	position: relative;
-	max-height: 900px;
 	background-color: black;
 	z-index: -2;
 }
