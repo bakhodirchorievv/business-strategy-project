@@ -31,7 +31,8 @@ const Guideline = () => {
 			<div className="guidline-wrapper">
 				<div className="innerHead">
 					<h2 className="main-title">
-						Превратите Ваши идеи в<span className="yellowFont">реальность</span>
+						Превратите Ваши идеи в{" "}
+						<span className="yellowFont"> реальность</span>
 					</h2>
 					<p className="title-desc">
 						Создайте профессиональные брендбуки и гайдлайны вместе с нашей

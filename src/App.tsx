@@ -1,26 +1,26 @@
 import { useEffect } from "react";
-// import Contact from "./Contacts/Contact";
-// import Cases from "./Cases/Cases";
-// import Television from "./Television/Television";
-// import Radio from "./Radio/Radio";
-// import Native from "./Native/Native";
-// import Partner from "./Partner/Partner";
-// import Presentation from "./Presentatiton/Presentation";
-// import Souvenir from "./Souvenir/Souvenir";
-// import Expert from "./Expert/Expert";
-// import Shop from "./Shop/Shop";
-// import Corporative from "./Corporative/Corporative";
-// import Card from "./Card/Card";
-// import MDesign from "./MDesign/MDesign";
-// import Packing from "./Packing/Packing";
-// import Corporate from "./Corporate/Corporate";
-// import Guideline from "./Guideline/Guideline";
-// import Site from "./Site/Site";
-// import Descriptor from "./Descriptor/Descriptor";
-import MmainPage from "./Mmain/MmainPage";
-// import BrandStrategy from "./BrandStrategy/BrandStrategy";
-// import Naming from "./Naming/Naming";
-// import Logo from "./Logo/Logo";
+// import Contact from "./Components/Contacts/Contact";
+// import Cases from "./Components/Cases/Cases";
+// import Native from "./Components/Native/Native";
+// import Radio from "./Components/Radio/Radio";
+// import Television from "./Components/Television/Television";
+// import Partner from "./Components/Partner/Partner";
+// import Presentation from "./Components/Presentatiton/Presentation";
+// import Souvenir from "./Components/Souvenir/Souvenir";
+// import Expert from "./Components/Expert/Expert";
+// import Shop from "./Components/Shop/Shop";
+// import Corporative from "./Components/Corporative/Corporative";
+// import Card from "./Components/Card/Card";
+// import MDesign from "./Components/MDesign/MDesign";
+// import Packing from "./Components/Packing/Packing";
+// import Site from "./Components/Site/Site";
+// import Guideline from "./Components/Guideline/Guideline";
+// import Corporate from "./Components/Corporate/Corporate";
+// import Descriptor from "./Components/Descriptor/Descriptor";
+// import Logo from "./Components/Logo/Logo";
+// import Naming from "./Components/Naming/Naming";
+// import BrandStrategy from "./Components/BrandStrategy/BrandStrategy";
+import MmainPage from "./Components/Mmain/MmainPage";
 
 const App = () => {
 	useEffect(() => {
