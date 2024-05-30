@@ -37,7 +37,7 @@ const App = () => {
 	}, []);
 
 	return (
-		<Router basename="/business-strategy-project">
+		<Router>
 			<div>
 				<Header />
 				<Update />
