@@ -1,8 +1,8 @@
 import { lazy, Suspense, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-// import Update from "./Components/Update";
+import Update from "./Update";
 
 const MmainPage = lazy(() => import("./Components/Mmain/MmainPage"));
 const Cases = lazy(() => import("./Components/Cases/Cases"));
@@ -37,10 +37,10 @@ const App = () => {
 	}, []);
 
 	return (
-		<Router basename="/business-strategy-project">
+		<Router>
 			<div>
 				<Header />
-				{/* <Update /> */}
+				<Update />
 				<Suspense fallback={<div>Loading...</div>}>
 					<Routes>
 						<Route path="/" element={<MmainPage />} />
