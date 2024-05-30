@@ -38,9 +38,9 @@ const App = () => {
 
 	return (
 		<Router basename="/business-strategy-project">
+			<Update />
 			<div>
 				<Header />
-				<Update />
 				<Suspense fallback={<div>Loading...</div>}>
 					<Routes>
 						<Route path="/" element={<MmainPage />} />
