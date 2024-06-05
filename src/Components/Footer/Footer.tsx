@@ -93,10 +93,14 @@ const Footer = () => {
 
 					<div className="foot-right-bottom">
 						<ul className="bottom-ul noneAdaptive">
-							<li className="bottom-list list-item head-case">Кейсы</li>
+							<Link to={"Cases"}>
+								<li className="bottom-list list-item head-case">Кейсы</li>
+							</Link>
 							<li className="bottom-list list-item head-service">Услуги</li>
 							<li className="bottom-list list-item head-company">О компании</li>
-							<li className="bottom-list list-item head-contact">Контакты</li>
+							<Link to={"Contact"}>
+								<li className="bottom-list list-item head-contact">Контакты</li>
+							</Link>
 						</ul>
 
 						<div className="apps-wrapper blockAdaptive">

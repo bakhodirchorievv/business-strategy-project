@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Update from "./Update";
+import Container from "./Container";
 
 const MmainPage = lazy(() => import("./Components/Mmain/MmainPage"));
 const Cases = lazy(() => import("./Components/Cases/Cases"));
@@ -39,36 +40,38 @@ const App = () => {
 	return (
 		<Router>
 			<div>
-				<Header />
-				<Update />
-				<Suspense fallback={<div>Loading...</div>}>
-					<Routes>
-						<Route path="/" element={<MmainPage />} />
-						<Route path="/Cases" element={<Cases />} />
-						<Route path="/BrandStrategy" element={<BrandStrategy />} />
-						<Route path="/Card" element={<Card />} />
-						<Route path="/Contact" element={<Contact />} />
-						<Route path="/Corporate" element={<Corporate />} />
-						<Route path="/Corporative" element={<Corporative />} />
-						<Route path="/Descriptor" element={<Descriptor />} />
-						<Route path="/Expert" element={<Expert />} />
-						<Route path="/Guideline" element={<Guideline />} />
-						<Route path="/Logo" element={<Logo />} />
-						<Route path="/MDesign" element={<MDesign />} />
-						<Route path="/Naming" element={<Naming />} />
-						<Route path="/Native" element={<Native />} />
-						<Route path="/Packing" element={<Packing />} />
-						<Route path="/Partner" element={<Partner />} />
-						<Route path="/Presentation" element={<Presentation />} />
-						<Route path="/Radio" element={<Radio />} />
-						<Route path="/Shop" element={<Shop />} />
-						<Route path="/Site" element={<Site />} />
-						<Route path="/Souvenir" element={<Souvenir />} />
-						<Route path="/Television" element={<Television />} />
-					</Routes>
-				</Suspense>
+				<Container>
+					<Header />
+					<Update />
+					<Suspense fallback={<div>Loading...</div>}>
+						<Routes>
+							<Route path="/" element={<MmainPage />} />
+							<Route path="/Cases" element={<Cases />} />
+							<Route path="/BrandStrategy" element={<BrandStrategy />} />
+							<Route path="/Card" element={<Card />} />
+							<Route path="/Contact" element={<Contact />} />
+							<Route path="/Corporate" element={<Corporate />} />
+							<Route path="/Corporative" element={<Corporative />} />
+							<Route path="/Descriptor" element={<Descriptor />} />
+							<Route path="/Expert" element={<Expert />} />
+							<Route path="/Guideline" element={<Guideline />} />
+							<Route path="/Logo" element={<Logo />} />
+							<Route path="/MDesign" element={<MDesign />} />
+							<Route path="/Naming" element={<Naming />} />
+							<Route path="/Native" element={<Native />} />
+							<Route path="/Packing" element={<Packing />} />
+							<Route path="/Partner" element={<Partner />} />
+							<Route path="/Presentation" element={<Presentation />} />
+							<Route path="/Radio" element={<Radio />} />
+							<Route path="/Shop" element={<Shop />} />
+							<Route path="/Site" element={<Site />} />
+							<Route path="/Souvenir" element={<Souvenir />} />
+							<Route path="/Television" element={<Television />} />
+						</Routes>
+					</Suspense>
 
-				<Footer />
+					<Footer />
+				</Container>
 			</div>
 		</Router>
 	);

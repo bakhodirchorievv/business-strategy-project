@@ -340,7 +340,7 @@ const MmainPage = () => {
 								<li className="packing-list">Фирменный стиль</li>
 								<li className="packing-list">Фирменный носители</li>
 							</ul>
-							<button className="overallBtn packing-btn overallBtn">
+							<button className=" packing-btn overallBtn">
 								Оставить заявку →
 							</button>
 						</div>
@@ -356,7 +356,7 @@ const MmainPage = () => {
 								<li className="packing-list">Фирменный стиль</li>
 								<li className="packing-list">Фирменные носители</li>
 							</ul>
-							<button className="overallBtn packing-btn overallBtn">
+							<button className=" packing-btn overallBtn">
 								Оставить заявку →
 							</button>
 						</div>
@@ -374,7 +374,7 @@ const MmainPage = () => {
 								<li className="packing-list">Фирменный носители</li>
 								<li className="packing-list">Бренд-гайд</li>
 							</ul>
-							<button className="overallBtn packing-btn overallBtn">
+							<button className=" packing-btn overallBtn">
 								Оставить заявку →
 							</button>
 						</div>

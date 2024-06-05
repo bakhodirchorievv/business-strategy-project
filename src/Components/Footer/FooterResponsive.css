@@ -8,10 +8,6 @@
 	.footer {
 		flex-wrap: wrap;
 	}
-
-	.thirdBodyItem {
-		width: 100%;
-	}
 }
 
 @media only screen and (max-width: 768px) {
