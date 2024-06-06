@@ -170,7 +170,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<h4 className="flashTitle">Сбор информации</h4>
-								<p className="flashDesc">
+								<p className="flashDesc ">
 									Обсуждение ключевой информации с клиентом и заполнение брифа
 								</p>
 							</div>
@@ -183,7 +183,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<h4 className="flashTitle">Планирование</h4>
-								<p className="flashDesc">
+								<p className="flashDesc flashDescTwo">
 									Исследование целевой аудитории и конкурентов, разработка
 									стратегии
 								</p>
@@ -197,7 +197,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<h4 className="flashTitle">Создание контента</h4>
-								<p className="flashDesc">
+								<p className="flashDesc ">
 									Разработка визуального концепта и «фундамента» страницы -
 									контента
 								</p>
@@ -211,7 +211,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<h4 className="flashTitle">Публикация</h4>
-								<p className="flashDesc">
+								<p className="flashDesc flashDescTwo">
 									Управление социальными сетями, постинг и анализ
 								</p>
 							</div>
@@ -224,7 +224,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<h4 className="flashTitle">Привлечение трафика</h4>
-								<p className="flashDesc">
+								<p className="flashDesc ">
 									Таргетированная реклама, сотрудничество с блогерами,
 									проведение розыгрышей, кросс-маркетинг
 								</p>
@@ -238,7 +238,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<h4 className="flashTitle">Отчетность</h4>
-								<p className="flashDesc">
+								<p className="flashDesc flashDescTwo">
 									Анализ и презентация результатов работы
 								</p>
 							</div>

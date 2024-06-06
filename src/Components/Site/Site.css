@@ -74,7 +74,7 @@ button {
 	line-height: 23.22px;
 	font-weight: 400;
 	color: rgba(117, 127, 147, 1);
-	max-width: 1150px;
+	max-width: 1090px;
 }
 .yellowDesc {
 	color: rgba(251, 236, 28, 1);
@@ -104,7 +104,7 @@ button {
 	background-color: rgba(57, 62, 75, 1);
 	padding: 27px 25px;
 	border-radius: 30px;
-	min-height: 320px;
+	min-height: 280px;
 }
 
 .firstInnerTitle {
@@ -135,7 +135,7 @@ button {
 	margin-top: 75px;
 }
 .firstBodyImg {
-	width: 33%;
+	width: 32.8%;
 }
 
 /* second part start */
@@ -158,13 +158,13 @@ button {
 	background-color: rgba(57, 62, 75, 1);
 	margin-top: 20px;
 	border-radius: 30px;
-	padding: 22px 20px;
-	min-height: 280px;
+	padding: 20px 20px;
+	min-height: 200px;
 }
 .TwoInOne {
-	margin: 0px 20px;
+	margin: 0px 15px;
 	margin-top: 20px;
-	min-height: 580px;
+	min-height: 440px;
 	background-color: rgba(251, 236, 28, 1);
 	display: flex;
 	flex-direction: column;
@@ -176,7 +176,7 @@ button {
 	text-align: center;
 }
 .simpleBack {
-	height: 580px;
+	height: 440px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -185,14 +185,14 @@ button {
 
 .secondInnerTitle {
 	color: white;
-	font-size: 25px;
+	font-size: 22px;
 	line-height: 32.25px;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	font-weight: 500;
 }
 .secondInnerDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
+	font-size: 14px;
 	line-height: 26px;
 }
 
@@ -214,13 +214,13 @@ button {
 
 .thirdBodyItem {
 	background-color: rgba(57, 62, 75, 1);
-	padding: 28px 29px;
+	padding: 20px 21px;
 	width: 49.1%;
 	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: 22px;
+	gap: 19px;
 }
 
 .flash {
@@ -230,15 +230,15 @@ button {
 
 .flashTitle {
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 }
 
@@ -248,7 +248,7 @@ button {
 	color: rgba(117, 127, 147, 1);
 	font-weight: 400;
 	margin-top: 60px;
-	max-width: 1230px;
+	max-width: 1235px;
 }
 
 /* fourth part start */
@@ -324,17 +324,17 @@ button {
 }
 
 .fourth-foot-title {
-	font-size: 40px;
-	line-height: 51.6px;
+	font-size: 33px;
+	line-height: 41.6px;
 	font-weight: 400;
 	margin-bottom: 15px;
 	letter-spacing: 2%;
 }
 .fourth-foot-desc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 23px;
 	font-weight: 400;
-	max-width: 550px;
+	max-width: 530px;
 }
 
 .fourth-foot-btn {
@@ -345,7 +345,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	/* margin-right: 65px; */
+	margin-right: 55px;
 	margin-top: 10px;
 }
 

@@ -84,6 +84,7 @@ button {
 }
 .mt-10 {
 	margin-top: 10px;
+	max-width: 1240px;
 }
 .innerHeadFoot {
 	padding: 30px;
@@ -100,10 +101,10 @@ button {
 	margin-bottom: 10px;
 }
 .mainFootDesc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 24px;
 	font-weight: 400;
-	max-width: 1250px;
+	max-width: 1150px;
 	margin: 0 auto;
 }
 
@@ -121,11 +122,11 @@ button {
 	margin-right: 55px;
 }
 .first-desc {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 35px;
 	font-weight: 400;
 	color: rgba(117, 127, 147, 1);
-	max-width: 1230px;
+	max-width: 1250px;
 	margin-top: 18px;
 }
 
@@ -157,26 +158,26 @@ button {
 
 .secondBodyItem {
 	background-color: rgba(57, 62, 75, 1);
-	padding: 28px 29px;
+	padding: 20px 21px;
 	width: 49.2%;
 	border-radius: 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 22px;
 }
 
 .flashTitle {
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 }
 
@@ -194,9 +195,9 @@ button {
 .third-body-item {
 	width: 32.5%;
 	background-color: rgba(57, 62, 75, 1);
-	padding: 27px 25px;
+	padding: 22px 20px;
 	border-radius: 30px;
-	min-height: 320px;
+	min-height: 280px;
 }
 
 .thirdInnerTitle {
@@ -297,23 +298,26 @@ button {
 	width: 49.2%;
 	border-radius: 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	gap: 22px;
 }
 
 .flashTitle {
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
+}
+.fifthFlashDesc {
+	max-width: 420px;
 }
 
 .fifth-part-foot {
@@ -331,17 +335,17 @@ button {
 }
 
 .fifth-foot-title {
-	font-size: 40px;
-	line-height: 51.6px;
+	font-size: 33px;
+	line-height: 41.6px;
 	font-weight: 400;
 	margin-bottom: 15px;
 	letter-spacing: 2%;
 }
 .fifth-foot-desc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 23px;
 	font-weight: 400;
-	max-width: 750px;
+	max-width: 660px;
 }
 .footBtnWrap {
 	display: flex;
@@ -355,7 +359,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	/* margin-right: 65px; */
+	margin-right: 55px;
 	margin-top: 10px;
 }
 

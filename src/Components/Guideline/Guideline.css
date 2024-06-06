@@ -98,6 +98,9 @@ button {
 	color: rgba(117, 127, 147, 1);
 	margin-top: 18px;
 }
+.firstSecDesc {
+	max-width: 1250px;
+}
 
 .firstImgWrap {
 	width: 100%;
@@ -127,13 +130,13 @@ button {
 
 .secondBodyItem {
 	background-color: rgba(57, 62, 75, 1);
-	padding: 28px 29px;
-	width: 49.1%;
+	padding: 18px 19px;
+	width: 49.2%;
 	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: 22px;
+	gap: 15px;
 }
 
 .flash {
@@ -143,15 +146,15 @@ button {
 
 .flashTitle {
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 }
 
@@ -212,12 +215,12 @@ button {
 	margin-top: 20px;
 	border-radius: 30px;
 	padding: 22px 20px;
-	min-height: 220px;
+	min-height: 190px;
 }
 .TwoInOne {
-	margin: 0px 20px;
+	margin: 0px 8px;
 	margin-top: 20px;
-	min-height: 460px;
+	min-height: 400px;
 	background-color: rgba(251, 236, 28, 1);
 	display: flex;
 	flex-direction: column;
@@ -231,15 +234,15 @@ button {
 
 .fourthInnerTitle {
 	color: white;
-	font-size: 25px;
+	font-size: 22px;
 	line-height: 32.25px;
 	margin-bottom: 10px;
 	font-weight: 500;
 }
 .fourthInnerDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 }
 
 /* fifth part start */
@@ -353,17 +356,17 @@ button {
 }
 
 .sixth-foot-title {
-	font-size: 40px;
-	line-height: 51.6px;
+	font-size: 33px;
+	line-height: 41.6px;
 	font-weight: 400;
 	margin-bottom: 15px;
 	letter-spacing: 2%;
 }
 .sixth-foot-desc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 24px;
 	font-weight: 400;
-	max-width: 550px;
+	max-width: 560px;
 }
 
 .sixth-foot-btn {
@@ -374,7 +377,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	/* margin-right: 65px; */
+	margin-right: 55px;
 	margin-top: 10px;
 }
 

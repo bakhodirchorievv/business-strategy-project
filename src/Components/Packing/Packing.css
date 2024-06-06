@@ -78,7 +78,10 @@ button {
 	font-weight: 400;
 	color: rgba(117, 127, 147, 1);
 	margin-top: 6px;
-	max-width: 12500px;
+	max-width: 1250px;
+}
+.shortMainDesc {
+	max-width: 1100px;
 }
 
 .head-foot {
@@ -87,10 +90,15 @@ button {
 	justify-content: space-between;
 }
 .head-foot-item {
-	width: 49%;
+	width: 49.3%;
 	background-color: rgba(57, 62, 75, 1);
 	padding: 30px 25px;
 	border-radius: 30px;
+}
+
+.alignCenterItem {
+	display: flex;
+	align-items: center;
 }
 .head-foot-title {
 	font-size: 25px;
@@ -101,9 +109,10 @@ button {
 .head-foot-desc {
 	color: rgba(206, 211, 224, 1);
 	text-align: center;
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 13.9px;
+	line-height: 23px;
 	font-weight: 400;
+	margin-top: 10px;
 }
 .yellowFont {
 	background-color: rgba(251, 236, 28, 1);
@@ -133,6 +142,7 @@ button {
 	line-height: 35px;
 	color: rgba(117, 127, 147, 1);
 	margin-top: 18px;
+	max-width: 1250px;
 }
 
 .firstImgWrap {
@@ -196,8 +206,8 @@ button {
 }
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 }
 
@@ -218,7 +228,7 @@ button {
 }
 .thirdBodyItem {
 	background-color: rgba(57, 62, 75, 1);
-	padding: 27px 25px;
+	padding: 22px 19px;
 	border-radius: 30px;
 	width: 32.5%;
 }
@@ -229,8 +239,8 @@ button {
 	font-weight: 500;
 }
 .thirdBodyDesc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 	margin-top: 10px;
 	color: rgba(206, 211, 224, 1);
@@ -329,17 +339,17 @@ button {
 }
 
 .fourth-foot-title {
-	font-size: 40px;
-	line-height: 51.6px;
+	font-size: 33px;
+	line-height: 41px;
 	font-weight: 400;
 	margin-bottom: 15px;
 	letter-spacing: 2%;
 }
 .fourth-foot-desc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 24px;
 	font-weight: 400;
-	max-width: 800px;
+	max-width: 790px;
 }
 
 .fourth-foot-btn {
@@ -350,7 +360,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	/* margin-right: 65px; */
+	margin-right: 55px;
 	margin-top: 10px;
 }
 

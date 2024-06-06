@@ -83,8 +83,8 @@ const Descriptor = () => {
 								<h3 className="flashTitle">Индивидуальный подход</h3>
 								<p className="flashDesc">
 									Наша команда тщательно анализирует Ваш бренд, ценности, а
-									также предпочтения целевой аудитории, чтобы создать логотип
-									выделяется
+									также предпочтения целевой аудитории, чтобы разработать
+									материал, который идеально подходит для Вас
 								</p>
 							</div>
 						</div>
@@ -97,9 +97,10 @@ const Descriptor = () => {
 							<div className="flashInfo">
 								<h3 className="flashTitle">Опыт и профессионализм</h3>
 								<p className="flashDesc">
-									Мы гордимся нашими дизайнерами, которые владеют не только
-									высоким профессионализмом и многолетним опытом, но и обладают
-									уникальным творческим подходом к созданию логотипов.
+									Мы гордимся нашей командой опытных специалистов, которые
+									обладают глубокими знаниями в области маркетинга и пониманием
+									того, как создать слоганы и дескрипторы, которые заставят Ваш
+									бренд выделиться
 								</p>
 							</div>
 						</div>
@@ -197,7 +198,7 @@ const Descriptor = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
+								<p className="flashDesc fifthFlashDesc">
 									Создать слоган, который будет олицетворять дух Вашего бренда и
 									вдохновлять Вашу аудиторию
 								</p>
@@ -210,7 +211,7 @@ const Descriptor = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
+								<p className="flashDesc fifthFlashDesc">
 									Разработать дескриптор, точно описывающий ключевые компетенции
 									и преимущества Вашего бизнеса
 								</p>
@@ -223,8 +224,9 @@ const Descriptor = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
-									Сделать Ваш бренд запоминающимся и уникальным на рынке
+								<p className="flashDesc fifthFlashDesc">
+									Привлечь новых клиентов и укрепить связь с текущими, используя
+									мощные слова и фразы
 								</p>
 							</div>
 						</div>
@@ -235,8 +237,8 @@ const Descriptor = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">
-									Сделать Ваш бренд уникальным и запоминающимся на рынке
+								<p className="flashDesc fifthFlashDesc">
+									Сделать Ваш бренд запоминающимся и уникальным на рынке
 								</p>
 							</div>
 						</div>

@@ -9,7 +9,7 @@ const MDesign = () => {
 				<div className="innerHead">
 					<h2 className="main-title">
 						Игра света и движения: ключевые аспекты{" "}
-						<p className="yellowFont">Motion Design!</p>
+						<span className="yellowFont blockSpan">Motion Design!</span>
 					</h2>
 					<p className="title-desc">
 						Создаем уникальную графическую анимацию для привлечения внимания к
@@ -346,7 +346,7 @@ const MDesign = () => {
 						<div className="getsFlex">
 							<p className="sixth-foot-desc">
 								Тогда обращайтесь к нам, и мы покажем вам уникальные возможности
-								<p>Motion Design!</p>
+								<span className="blockSpan">Motion Design!</span>
 							</p>
 
 							<button className="sixth-foot-btn">Заполнить бриф →</button>

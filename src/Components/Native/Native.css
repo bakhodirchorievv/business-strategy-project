@@ -134,8 +134,8 @@ button {
 
 .secondBodyItem {
 	background-color: rgba(57, 62, 75, 1);
-	padding: 28px 29px;
-	width: 49.1%;
+	padding: 25px 26px;
+	width: 49.2%;
 	border-radius: 15px;
 	display: flex;
 	justify-content: flex-start;
@@ -144,7 +144,7 @@ button {
 }
 
 .flashTitle {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 600;
 	color: white;
@@ -153,8 +153,8 @@ button {
 
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 }
 
@@ -175,18 +175,18 @@ button {
 	background-color: rgba(57, 62, 75, 1);
 	padding: 25px 22px;
 	margin-top: 20px;
-	min-height: 235px;
+	min-height: 190px;
 }
 .thirdBodyTitle {
 	color: white;
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 22px;
 	line-height: 32.25px;
 }
 .thirdBodyDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 	margin-top: 10px;
 }
@@ -254,7 +254,6 @@ button {
 	background-color: rgba(251, 236, 28, 1);
 	border-radius: 30px;
 	margin-top: 150px;
-	margin-right: 55px;
 }
 
 .getsFlex {
@@ -265,15 +264,15 @@ button {
 }
 
 .fifth-foot-title {
-	font-size: 40px;
-	line-height: 51.6px;
+	font-size: 33px;
+	line-height: 41.6px;
 	font-weight: 400;
 	margin-bottom: 15px;
 	letter-spacing: 2%;
 }
 .fifth-foot-desc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 24px;
 	font-weight: 400;
 	max-width: 650px;
 	margin-bottom: 10px;
@@ -287,7 +286,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	/* margin-right: 65px; */
+	margin-right: 55px;
 }
 
 /* footer start */

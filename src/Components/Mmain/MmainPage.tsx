@@ -134,9 +134,13 @@ const MmainPage = () => {
 							<h3 className="caseTitle">Valor</h3>
 							<p className="case-desc">Ювелирные изделия</p>
 							<div className="caseBtnWrapper">
-								<button className="overallBtn caseBtn">Логотип</button>
+								<Link to={"Logo"}>
+									<button className="overallBtn caseBtn">Логотип</button>
+								</Link>
 								<button className="overallBtn caseBtn">Брендинг</button>
-								<button className="overallBtn caseBtn">Сайт</button>
+								<Link to={"Site"}>
+									<button className="overallBtn caseBtn">Сайт</button>
+								</Link>
 							</div>
 						</div>
 						<div className="left-case-item">
@@ -144,9 +148,13 @@ const MmainPage = () => {
 							<h3 className="caseTitle">Valor</h3>
 							<p className="case-desc">Ювелирные изделия</p>
 							<div className="caseBtnWrapper">
-								<button className="overallBtn caseBtn">Логотип</button>
+								<Link to={"Logo"}>
+									<button className="overallBtn caseBtn">Логотип</button>
+								</Link>
 								<button className="overallBtn caseBtn">Брендинг</button>
-								<button className="overallBtn caseBtn">Сайт</button>
+								<Link to={"Site"}>
+									<button className="overallBtn caseBtn">Сайт</button>
+								</Link>
 							</div>
 						</div>
 						<div className="left-case-item bigger">
@@ -154,9 +162,13 @@ const MmainPage = () => {
 							<h3 className="caseTitle ">Valor</h3>
 							<p className="case-desc">Ювелирные изделия</p>
 							<div className="caseBtnWrapper">
-								<button className="overallBtn caseBtn">Логотип</button>
+								<Link to={"Logo"}>
+									<button className="overallBtn caseBtn">Логотип</button>
+								</Link>
 								<button className="overallBtn caseBtn">Брендинг</button>
-								<button className="overallBtn caseBtn">Сайт</button>
+								<Link to={"Site"}>
+									<button className="overallBtn caseBtn">Сайт</button>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -171,9 +183,13 @@ const MmainPage = () => {
 								Сервис аренды недвижимости
 							</p>
 							<div className="caseBtnWrapper flexEnd">
-								<button className="overallBtn caseBtn">Логотип</button>
+								<Link to={"Logo"}>
+									<button className="overallBtn caseBtn">Логотип</button>
+								</Link>
 								<button className="overallBtn caseBtn">Брендинг</button>
-								<button className="overallBtn caseBtn">Сайт</button>
+								<Link to={"Site"}>
+									<button className="overallBtn caseBtn">Сайт</button>
+								</Link>
 							</div>
 						</div>
 						<div className="right-case-item">
@@ -181,9 +197,13 @@ const MmainPage = () => {
 							<h3 className="caseTitle">Valor</h3>
 							<p className="case-desc">Ювелирные изделия</p>
 							<div className="caseBtnWrapper">
-								<button className="overallBtn caseBtn">Логотип</button>
+								<Link to={"Logo"}>
+									<button className="overallBtn caseBtn">Логотип</button>
+								</Link>
 								<button className="overallBtn caseBtn">Брендинг</button>
-								<button className="overallBtn caseBtn">Сайт</button>
+								<Link to={"Site"}>
+									<button className="overallBtn caseBtn">Сайт</button>
+								</Link>
 							</div>
 						</div>
 						<button className="overallBtn moreCaseBtn ">больше кейсов →</button>

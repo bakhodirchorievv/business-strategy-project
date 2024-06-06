@@ -137,8 +137,8 @@ button {
 
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 }
 
@@ -165,14 +165,14 @@ button {
 .thirdBodyTitle {
 	color: white;
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 22px;
 	line-height: 32.25px;
 }
 .thirdBodyDesc {
 	margin-top: 10px;
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
 }
 
@@ -204,7 +204,7 @@ button {
 }
 
 .flashTitle {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 600;
 	color: white;
@@ -213,9 +213,12 @@ button {
 
 .flashDesc {
 	color: rgba(206, 211, 224, 1);
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 23px;
 	font-weight: 400;
+}
+.flashDescTwo {
+	max-width: 330px;
 }
 
 /* fifth part start */
@@ -291,16 +294,16 @@ button {
 }
 
 .fifth-foot-title {
-	font-size: 40px;
-	line-height: 51.6px;
+	font-size: 33px;
+	line-height: 41.6px;
 	font-weight: 400;
 	letter-spacing: 2%;
 }
 .fifth-foot-desc {
-	font-size: 17px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 24px;
 	font-weight: 400;
-	max-width: 750px;
+	max-width: 640px;
 	margin-top: 15px;
 }
 
@@ -312,7 +315,7 @@ button {
 	padding: 27px 66px;
 	border-radius: 55px;
 	color: white;
-	/* margin-right: 65px; */
+	margin-right: 55px;
 	margin-top: 10px;
 }
 
