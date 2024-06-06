@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Expert/Expert.css";
 import "../Expert/ExpertResponsive.css";
 
@@ -253,19 +254,25 @@ const Expert = () => {
 							<div className="whiteBack"></div>
 							<h3 className="fifthBodyTitle">Пропорция</h3>
 							<p className="fifthBodyDesc">Салон красоты</p>
-							<button className="fifthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="fifthBtn">Сайт</button>
+							</Link>
 						</div>
 						<div className="fifthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fifthBodyTitle">Пропорция</h3>
 							<p className="fifthBodyDesc">Салон красоты</p>
-							<button className="fifthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="fifthBtn">Сайт</button>
+							</Link>
 						</div>
 						<div className="fifthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fifthBodyTitle">Пропорция</h3>
 							<p className="fifthBodyDesc">Салон красоты</p>
-							<button className="fifthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="fifthBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 

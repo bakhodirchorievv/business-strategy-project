@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Shop.css";
 import "./ShopResponsive.css";
 
@@ -276,19 +277,25 @@ const Shop = () => {
 							<div className="whiteBack"></div>
 							<h3 className="sixthBodyTitle">Пропорция</h3>
 							<p className="sixthBodyDesc">Салон красоты</p>
-							<button className="sixthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="sixthBtn">Сайт</button>
+							</Link>
 						</div>
 						<div className="sixthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="sixthBodyTitle">Пропорция</h3>
 							<p className="sixthBodyDesc">Салон красоты</p>
-							<button className="sixthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="sixthBtn">Сайт</button>
+							</Link>
 						</div>
 						<div className="sixthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="sixthBodyTitle">Пропорция</h3>
 							<p className="sixthBodyDesc">Салон красоты</p>
-							<button className="sixthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="sixthBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 

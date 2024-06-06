@@ -73,7 +73,7 @@ button {
 .head-title {
 	color: white;
 	position: absolute;
-	bottom: 20px;
+	bottom: 70px;
 	left: 72.5px;
 	font-weight: 400;
 	font-size: 140px;
@@ -89,7 +89,7 @@ button {
 	max-width: 490px;
 	position: absolute;
 	right: 72.5px;
-	bottom: 7%;
+	bottom: 15%;
 }
 
 /* first section start */

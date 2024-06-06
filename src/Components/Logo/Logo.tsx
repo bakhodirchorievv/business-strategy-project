@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Logo/Logo.css";
 import "../Logo/LogoResponsive.css";
 
@@ -182,19 +183,25 @@ const Logo = () => {
 							<div className="whiteBack"></div>
 							<h3 className="fourthBodyTitle">Пропорция</h3>
 							<p className="fourthBodyDesc">Салон красоты</p>
-							<button className="fourthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="fourthBtn">Сайт</button>
+							</Link>
 						</div>
 						<div className="fourthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fourthBodyTitle">Пропорция</h3>
 							<p className="fourthBodyDesc">Салон красоты</p>
-							<button className="fourthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="fourthBtn">Сайт</button>
+							</Link>
 						</div>
 						<div className="fourthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fourthBodyTitle">Пропорция</h3>
 							<p className="fourthBodyDesc">Салон красоты</p>
-							<button className="fourthBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="fourthBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 				</div>
