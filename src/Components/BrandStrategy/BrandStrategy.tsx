@@ -1,8 +1,23 @@
 import { Link } from "react-router-dom";
 import "../BrandStrategy/BrandStrategy.css";
 import "../BrandStrategy/BrandResponsive.css";
+import { RefObject, useRef } from "react";
 
 const BrandStrategy = () => {
+	const scrollContainerRef: RefObject<HTMLDivElement> = useRef(null);
+
+	const handleScrollRight = () => {
+		if (scrollContainerRef.current) {
+			scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
+		}
+	};
+
+	const handleScrollLeft = () => {
+		if (scrollContainerRef.current) {
+			scrollContainerRef.current.scrollBy({ left: -300, behavior: "smooth" });
+		}
+	};
+
 	return (
 		<>
 			<div className="bottomOfHeader">
@@ -102,7 +117,7 @@ const BrandStrategy = () => {
 						можно представить в виде пирамиды
 					</h3>
 
-					<div className="second-body">
+					<div className="second-body" ref={scrollContainerRef}>
 						<div className="secondBodyItem">
 							<h3 className="secondItemTitle">Дизайн-код</h3>
 							<p className="secondItemDesc">
@@ -165,11 +180,13 @@ const BrandStrategy = () => {
 							src="/business-strategy-project/MainPage/Arrow.png"
 							alt=""
 							className="arrowLeft"
+							onClick={handleScrollLeft}
 						/>
 						<img
 							src="/business-strategy-project/MainPage/Arrow.png"
 							alt=""
 							className="arrowRight"
+							onClick={handleScrollRight}
 						/>
 					</div>
 				</div>

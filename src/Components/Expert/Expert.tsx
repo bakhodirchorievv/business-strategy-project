@@ -15,7 +15,7 @@ const Expert = () => {
 				<div className="first-part">
 					<h3 className="generalTitle first-title">О нас</h3>
 					<p className="firstSectionDesc">
-						Мы- команда экспертов по продвижению твоего бизнеса в социальных
+						Мы - команда экспертов по продвижению твоего бизнеса в социальных
 						сетях. Наша цель - помочь тебе увеличить узнаваемость бренда,
 						привлечь новых клиентов и повысить продажи.
 					</p>
@@ -41,7 +41,7 @@ const Expert = () => {
 								className="flash"
 							/>
 							<div className="flashInfo">
-								<p className="flashDesc">Увеличение узнаваемости бренда;</p>
+								<p className="flashDesc">Увеличение узнаваемости бренда.</p>
 							</div>
 						</div>
 						<div className="secondBodyItem">
@@ -52,7 +52,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<p className="flashDesc">
-									Создание дополнительного канала продаж
+									Создание дополнительного канала продаж.
 								</p>
 							</div>
 						</div>
@@ -65,7 +65,7 @@ const Expert = () => {
 							<div className="flashInfo">
 								<p className="flashDesc">
 									Возможность установить контакт с потенциальными клиентами и
-									понять их потребности
+									понять их потребности.
 								</p>
 							</div>
 						</div>
@@ -89,7 +89,7 @@ const Expert = () => {
 							/>
 							<div className="flashInfo">
 								<p className="flashDesc">
-									Повышение лояльности клиентов и доверия к бренду
+									Повышение лояльности клиентов и доверия к бренду.
 								</p>
 							</div>
 						</div>

@@ -70,7 +70,7 @@ const MmainPage = () => {
 
 				<div className="timeToWrapper">
 					<h2 className="timeToTitle">
-						<span className="yellowSide">time to</span> -- это команда
+						<span className="yellowSide">time to</span> - это команда
 						экспертов,повседневная практика показывает, что консультация с
 						широким активом
 					</h2>
@@ -86,7 +86,7 @@ const MmainPage = () => {
 							</p>
 
 							<button className="overallBtn timeBtn">
-								время познакомится →
+								время познакомиться →
 							</button>
 						</div>
 						<div className="timeRight">
@@ -222,7 +222,7 @@ const MmainPage = () => {
 						</h3>
 
 						<button className="overallBtn yellowBtn">
-							время познакомится →
+							время познакомиться →
 						</button>
 					</div>
 
