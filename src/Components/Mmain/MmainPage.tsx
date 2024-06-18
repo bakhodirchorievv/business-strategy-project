@@ -406,11 +406,11 @@ const MmainPage = () => {
 
 					<div className="workWithBody">
 						<img
-							src="/business-strategy-project/MainPage/workWithBody.png"
+							src="/business-strategy-project/MainPage/screenOfMainImg.png"
 							alt=""
 							className="workWithImg"
 						/>
-						<div className="adaptiveParts">
+						{/* <div className="adaptiveParts">
 							<div className="adapItemWrap">
 								<img
 									src="/business-strategy-project/MainPage/partAdaptive1.png"
@@ -435,7 +435,12 @@ const MmainPage = () => {
 									className="adaptiveItem"
 								/>
 							</div>
-						</div>
+						</div> */}
+						<img
+							src="/business-strategy-project/MainPage/ScreenOfAdaptive.png"
+							alt=""
+							className="adaptiveParts"
+						/>
 					</div>
 				</div>
 

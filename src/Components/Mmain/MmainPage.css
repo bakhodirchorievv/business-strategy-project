@@ -874,6 +874,7 @@ button {
 
 .adaptiveParts {
 	display: none;
+	width: 100%;
 }
 
 .blockAdaptive {

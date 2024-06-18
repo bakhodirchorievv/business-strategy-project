@@ -148,6 +148,7 @@
 @media only screen and (max-width: 768px) {
 	.contact-wrapper {
 		margin: 100px 20px;
+		padding: 40px;
 	}
 	.contact-body {
 		gap: 20px;

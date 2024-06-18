@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Cases/Cases.css";
 import "../Cases/CasesResponsive.css";
 
@@ -14,7 +15,9 @@ const Cases = () => {
 								<h4 className="caseItemTitle">Пропорция</h4>
 								<p className="caseItemDesc">Салон красоты</p>
 							</div>
-							<button className="caseItemBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="caseItemBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 					<div className="case-item">
@@ -24,7 +27,9 @@ const Cases = () => {
 								<h4 className="caseItemTitle">Пропорция</h4>
 								<p className="caseItemDesc">Салон красоты</p>
 							</div>
-							<button className="caseItemBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="caseItemBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 					<div className="case-item">
@@ -34,7 +39,9 @@ const Cases = () => {
 								<h4 className="caseItemTitle">Пропорция</h4>
 								<p className="caseItemDesc">Салон красоты</p>
 							</div>
-							<button className="caseItemBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="caseItemBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 					<div className="case-item">
@@ -44,7 +51,9 @@ const Cases = () => {
 								<h4 className="caseItemTitle">Пропорция</h4>
 								<p className="caseItemDesc">Салон красоты</p>
 							</div>
-							<button className="caseItemBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="caseItemBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 					<div className="case-item">
@@ -54,7 +63,9 @@ const Cases = () => {
 								<h4 className="caseItemTitle">Пропорция</h4>
 								<p className="caseItemDesc">Салон красоты</p>
 							</div>
-							<button className="caseItemBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="caseItemBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 					<div className="case-item">
@@ -64,7 +75,9 @@ const Cases = () => {
 								<h4 className="caseItemTitle">Пропорция</h4>
 								<p className="caseItemDesc">Салон красоты</p>
 							</div>
-							<button className="caseItemBtn">Сайт</button>
+							<Link to={"/Site"}>
+								<button className="caseItemBtn">Сайт</button>
+							</Link>
 						</div>
 					</div>
 				</div>
