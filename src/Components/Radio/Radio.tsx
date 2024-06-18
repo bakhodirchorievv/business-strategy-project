@@ -4,7 +4,7 @@ import "./RadioResponsive.css";
 const Radio = () => {
 	return (
 		<>
-			<div className="television-wrapper">
+			<div className="radio-wrapper">
 				<div className="innerHead">
 					<h2 className="main-title">
 						<span className="yellowFont">Реклама </span>

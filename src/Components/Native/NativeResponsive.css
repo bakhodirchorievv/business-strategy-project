@@ -147,3 +147,49 @@
 		padding-bottom: 25px;
 	}
 }
+
+/* main responsive starts from here */
+@media only screen and (max-width: 768px) {
+	.native-wrapper {
+		margin: 100px 20px;
+		padding: 20px 0px 20px 22px;
+	}
+
+	.innerHead,
+	.first-part,
+	.second-part,
+	.third-part,
+	.fourth-part,
+	.fifth-part {
+		margin-right: 20px;
+	}
+
+	.second-body,
+	.thirdBody,
+	.fourth-body,
+	.fifth-foot {
+		flex-direction: column;
+	}
+	.secondBodyItem,
+	.thirdBodyItem,
+	.fourthBodyItem,
+	.fifth-foot-item {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.secondBodyItem {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.fifth-part-foot {
+		padding: 44px 25px;
+	}
+	.fifth-foot-btn {
+		padding: 20px 50px;
+		width: 100%;
+		left: 0;
+	}
+}

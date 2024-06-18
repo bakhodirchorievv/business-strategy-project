@@ -143,3 +143,16 @@
 		padding-bottom: 25px;
 	}
 }
+
+/* main responsive starts from here */
+@media only screen and (max-width: 768px) {
+	.cases-wrapper {
+		margin: 100px 20px;
+	}
+	.cases-body {
+		flex-direction: column;
+	}
+	.case-item {
+		width: 100%;
+	}
+}

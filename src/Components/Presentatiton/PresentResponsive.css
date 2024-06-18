@@ -147,3 +147,54 @@
 		padding-bottom: 25px;
 	}
 }
+
+/* main responsive starts from here */
+@media only screen and (max-width: 768px) {
+	.presentation-wrapper {
+		margin: 100px 20px;
+		padding: 20px 0px 20px 22px;
+	}
+
+	.innerHead,
+	.first-part,
+	.second-part,
+	.third-part,
+	.fourth-part,
+	.fifth-part-foot {
+		margin-right: 20px;
+	}
+
+	.second-body,
+	.thirdBody,
+	.fourth-foot {
+		flex-direction: column;
+	}
+	.secondBodyItem,
+	.thirdBodyItem,
+	.fourth-foot-item {
+		width: 100%;
+	}
+
+	.fifthBodyItem {
+		width: 100%;
+	}
+	.whiteBack {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.secondBodyItem {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.fifth-part-foot {
+		padding: 44px 25px;
+	}
+	.fifth-foot-btn {
+		padding: 20px 50px;
+		width: 100%;
+		left: 0;
+	}
+}

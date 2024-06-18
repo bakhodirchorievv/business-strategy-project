@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Update from "./Update";
 import Container from "./Container";
+import "./App.css";
 
 const MmainPage = lazy(() => import("./Components/Mmain/MmainPage"));
 const Cases = lazy(() => import("./Components/Cases/Cases"));

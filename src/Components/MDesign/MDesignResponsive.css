@@ -147,3 +147,59 @@
 		padding-bottom: 25px;
 	}
 }
+
+/* main responsive starts from here */
+@media only screen and (max-width: 768px) {
+	.motion-wrapper {
+		margin: 100px 20px;
+		padding: 20px 0px 20px 22px;
+	}
+
+	.innerHead,
+	.first-part,
+	.second-part,
+	.third-part,
+	.second-part,
+	.fifth-part,
+	.sixth-part-foot {
+		margin-right: 20px;
+	}
+
+	.second-body,
+	.thirdSectionBody,
+	.fifth-foot {
+		flex-direction: column;
+	}
+	.secondBodyItem,
+	.thirdBodyItem,
+	.fifth-foot-item {
+		width: 100%;
+	}
+	.TwoInOne {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.sixthBodyItem {
+		width: 100%;
+	}
+	.whiteBack {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.secondBodyItem {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.sixth-part-foot {
+		padding: 44px 25px;
+	}
+	.sixth-foot-btn {
+		padding: 20px 50px;
+		width: 100%;
+		left: 0;
+	}
+}
