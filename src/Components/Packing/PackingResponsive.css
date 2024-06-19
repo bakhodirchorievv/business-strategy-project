@@ -185,6 +185,14 @@
 	.whiteBack {
 		width: 100%;
 	}
+
+	.main-title {
+		font-size: 43px;
+		line-height: 60px;
+	}
+	.generalTitle {
+		font-size: 35px;
+	}
 }
 
 @media only screen and (max-width: 400px) {

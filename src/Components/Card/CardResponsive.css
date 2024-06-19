@@ -165,4 +165,12 @@
 	.sixth-part {
 		margin-right: 20px;
 	}
+
+	.main-title {
+		font-size: 43px;
+		line-height: 60px;
+	}
+	.generalTitle {
+		font-size: 35px;
+	}
 }
