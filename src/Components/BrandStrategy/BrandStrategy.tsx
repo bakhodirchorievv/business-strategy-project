@@ -26,11 +26,18 @@ const BrandStrategy = () => {
 				<p className="head-desc">
 					Создание сильного бренда, который поведет за собой бизнес и людей
 				</p>
-
+				{/* 
 				<img
 					src="/business-strategy-project/MainPage/brandStrategy-mainImg.png"
 					alt=""
 					className="mainImage"
+				/> */}
+				<video
+					src="/business-strategy-project/MainPage/brandstrategyMainVideo.mp4"
+					className="mainImage brandStrategyMainVideo"
+					autoPlay
+					loop
+					muted
 				/>
 			</div>
 
