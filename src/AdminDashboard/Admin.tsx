@@ -226,66 +226,68 @@ const Admin = () => {
 				</div>
 			)}
 
-			<div className="controlDataWrapper">
-				{CaseList.map((Case) => (
-					<div className="caseItemWrapperFire" key={Case.id}>
-						{userEmail && (
-							<>
-								<h1 style={{ color: "white" }}>{Case.title}</h1>
-								<p>{Case.desc}</p>
-								{Case.imageUrl && (
-									<img
-										className="caseImgFire"
-										src={Case.imageUrl}
-										alt={Case.title}
-										width="500"
+			{userEmail && (
+				<div className="controlDataWrapper">
+					{CaseList.map((Case) => (
+						<div className="caseItemWrapperFire" key={Case.id}>
+							{userEmail && (
+								<>
+									<h1 style={{ color: "white" }}>{Case.title}</h1>
+									<p>{Case.desc}</p>
+									{Case.imageUrl && (
+										<img
+											className="caseImgFire"
+											src={Case.imageUrl}
+											alt={Case.title}
+											width="500"
+										/>
+									)}
+
+									<button onClick={() => deleteCase(Case.id, Case.imageUrl)}>
+										Delete Case
+									</button>
+									<br />
+									<input
+										onChange={(e) => setUpdatedTitle(e.target.value)}
+										type="text"
+										value={updatedTitle}
+										placeholder="new title..."
 									/>
-								)}
+									<button onClick={() => onUpdateTitle(Case.id)}>
+										Update Title
+									</button>
+									<br />
+									<input
+										type="file"
+										ref={updatedImageFile}
+										onChange={(e) =>
+											setUpdatedImage(e.target.files ? e.target.files[0] : null)
+										}
+									/>
+									<button onClick={() => onUpdateImage(Case.id, Case.imageUrl)}>
+										Update Image
+									</button>
+									<br />
+									<button onClick={() => onDeleteImage(Case.id, Case.imageUrl)}>
+										Delete Image
+									</button>
 
-								<button onClick={() => deleteCase(Case.id, Case.imageUrl)}>
-									Delete Case
-								</button>
-								<br />
-								<input
-									onChange={(e) => setUpdatedTitle(e.target.value)}
-									type="text"
-									value={updatedTitle}
-									placeholder="new title..."
-								/>
-								<button onClick={() => onUpdateTitle(Case.id)}>
-									Update Title
-								</button>
-								<br />
-								<input
-									type="file"
-									ref={updatedImageFile}
-									onChange={(e) =>
-										setUpdatedImage(e.target.files ? e.target.files[0] : null)
-									}
-								/>
-								<button onClick={() => onUpdateImage(Case.id, Case.imageUrl)}>
-									Update Image
-								</button>
-								<br />
-								<button onClick={() => onDeleteImage(Case.id, Case.imageUrl)}>
-									Delete Image
-								</button>
-
-								<br />
-								<input
-									type="text"
-									onChange={(e) => setupdatedDesc(e.target.value)}
-									value={updatedDesc}
-									placeholder="new desc..."
-								/>
-								<button onClick={() => onUpDatedesc(Case.id)}>
-									Update Desc
-								</button>
-							</>
-						)}
-					</div>
-				))}
-			</div>
+									<br />
+									<input
+										type="text"
+										onChange={(e) => setupdatedDesc(e.target.value)}
+										value={updatedDesc}
+										placeholder="new desc..."
+									/>
+									<button onClick={() => onUpDatedesc(Case.id)}>
+										Update Desc
+									</button>
+								</>
+							)}
+						</div>
+					))}
+				</div>
+			)}
 		</div>
 	);
 };
