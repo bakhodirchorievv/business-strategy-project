@@ -9,7 +9,7 @@ import { getDocs, collection } from "firebase/firestore";
 interface Case {
 	id: string;
 	title: string;
-	desc: number;
+	desc: string;
 	imageUrl: string;
 	userId?: string;
 }

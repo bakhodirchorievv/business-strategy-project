@@ -388,28 +388,29 @@ const MmainPage = () => {
 				<div className="cases-wrapper hidden">
 					<h2 className="case-title getBlock overallTitle topTitle">Кейсы</h2>
 					<div className="case-left">
-						{/* {caseList.slice(0, 3).map((caseItem, index) => (
-							<div
-								className={`left-case-item fromCenter ${
-									index === 2 ? "bigger" : ""
-								}`}
-								key={caseItem.id}
-							>
+						{/* {caseList.length &&
+							caseList.slice(0, 3).map((caseItem, index) => (
 								<div
-									className="whiteBack"
-									style={{ backgroundImage: `url(${caseItem.imageUrl})` }}
-								></div>
-								<h3 className="caseTitle">{caseItem.title || "Valor"}</h3>
-								<p className="case-desc">
-									{caseItem.desc || "Ювелирные изделия"}
-								</p>
-								<div className="caseBtnWrapper">
-									<button className="overallBtn caseBtn">Логотип</button>
-									<button className="overallBtn caseBtn">Брендинг</button>
-									<button className="overallBtn caseBtn">Сайт</button>
+									className={`left-case-item fromCenter ${
+										index === 2 ? "bigger" : ""
+									}`}
+									key={caseItem.id}
+								>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${caseItem.imageUrl})` }}
+									></div>
+									<h3 className="caseTitle">{caseItem.title || "Valor"}</h3>
+									<p className="case-desc">
+										{caseItem.desc || "Ювелирные изделия"}
+									</p>
+									<div className="caseBtnWrapper">
+										<button className="overallBtn caseBtn">Логотип</button>
+										<button className="overallBtn caseBtn">Брендинг</button>
+										<button className="overallBtn caseBtn">Сайт</button>
+									</div>
 								</div>
-							</div>
-						))} */}
+							))} */}
 
 						<div className="left-case-item fromCenter">
 							<div className="whiteBack"></div>
@@ -458,28 +459,29 @@ const MmainPage = () => {
 					<div className="case-right">
 						<h2 className="case-title getNone overallTitle">Кейсы</h2>
 
-						{/* {caseList.slice(3, 5).map((caseItem, index) => (
-							<div
-								className={`left-case-item fromCenter ${
-									index === 2 ? "bigger" : ""
-								}`}
-								key={caseItem.id}
-							>
+						{/* {caseList.length &&
+							caseList.slice(3, 5).map((caseItem, index) => (
 								<div
-									className="whiteBack"
-									style={{ backgroundImage: `url(${caseItem.imageUrl})` }}
-								></div>
-								<h3 className="caseTitle">{caseItem.title || "Valor"}</h3>
-								<p className="case-desc">
-									{caseItem.desc || "Ювелирные изделия"}
-								</p>
-								<div className="caseBtnWrapper">
-									<button className="overallBtn caseBtn">Логотип</button>
-									<button className="overallBtn caseBtn">Брендинг</button>
-									<button className="overallBtn caseBtn">Сайт</button>
+									className={`left-case-item fromCenter ${
+										index === 2 ? "bigger" : ""
+									}`}
+									key={caseItem.id}
+								>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${caseItem.imageUrl})` }}
+									></div>
+									<h3 className="caseTitle">{caseItem.title || "Valor"}</h3>
+									<p className="case-desc">
+										{caseItem.desc || "Ювелирные изделия"}
+									</p>
+									<div className="caseBtnWrapper">
+										<button className="overallBtn caseBtn">Логотип</button>
+										<button className="overallBtn caseBtn">Брендинг</button>
+										<button className="overallBtn caseBtn">Сайт</button>
+									</div>
 								</div>
-							</div>
-						))} */}
+							))} */}
 
 						<div className="right-case-item fromCenter bigger getNone">
 							<div className="whiteBackRight"></div>
