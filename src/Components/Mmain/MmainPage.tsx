@@ -3,6 +3,17 @@ import "../Mmain/MmainPage.css";
 import "../Mmain/Mmresponsive.css";
 import { useEffect, useRef, useState } from "react";
 
+// import { db } from "../../AdminDashboard/FirebaseConfig";
+// import { getDocs, collection } from "firebase/firestore";
+
+// interface Case {
+// 	id: string;
+// 	title: string;
+// 	desc: string;
+// 	imageUrl: string;
+// 	userId?: string;
+// }
+
 const MmainPage = () => {
 	//  video controol start
 	const mainImages = document.querySelectorAll(".mainImage");
@@ -118,6 +129,7 @@ const MmainPage = () => {
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
+					setText("");
 					const typeText = () => {
 						for (let i = 0; i < fullText.length; i++) {
 							setTimeout(() => {
@@ -178,6 +190,27 @@ const MmainPage = () => {
 			plus.classList.remove("disappearWithAnimation");
 		}
 	};
+
+	//  get data from firebase
+	// const [caseList, setCaseList] = useState<Case[]>([]);
+	// const casesCollectionRef = collection(db, "cases");
+
+	// const getCaseList = async () => {
+	// 	try {
+	// 		const data = await getDocs(casesCollectionRef);
+	// 		const filteredData: Case[] = data.docs.map((doc) => ({
+	// 			...(doc.data() as Omit<Case, "id">),
+	// 			id: doc.id,
+	// 		}));
+	// 		setCaseList(filteredData);
+	// 	} catch (error) {
+	// 		console.error(error);
+	// 	}
+	// };
+
+	// useEffect(() => {
+	// 	getCaseList();
+	// }, []);
 
 	return (
 		<>
@@ -355,6 +388,29 @@ const MmainPage = () => {
 				<div className="cases-wrapper hidden">
 					<h2 className="case-title getBlock overallTitle topTitle">Кейсы</h2>
 					<div className="case-left">
+						{/* {caseList.slice(0, 3).map((caseItem, index) => (
+							<div
+								className={`left-case-item fromCenter ${
+									index === 2 ? "bigger" : ""
+								}`}
+								key={caseItem.id}
+							>
+								<div
+									className="whiteBack"
+									style={{ backgroundImage: `url(${caseItem.imageUrl})` }}
+								></div>
+								<h3 className="caseTitle">{caseItem.title || "Valor"}</h3>
+								<p className="case-desc">
+									{caseItem.desc || "Ювелирные изделия"}
+								</p>
+								<div className="caseBtnWrapper">
+									<button className="overallBtn caseBtn">Логотип</button>
+									<button className="overallBtn caseBtn">Брендинг</button>
+									<button className="overallBtn caseBtn">Сайт</button>
+								</div>
+							</div>
+						))} */}
+
 						<div className="left-case-item fromCenter">
 							<div className="whiteBack"></div>
 							<h3 className="caseTitle">Valor</h3>
@@ -402,6 +458,29 @@ const MmainPage = () => {
 					<div className="case-right">
 						<h2 className="case-title getNone overallTitle">Кейсы</h2>
 
+						{/* {caseList.slice(3, 5).map((caseItem, index) => (
+							<div
+								className={`left-case-item fromCenter ${
+									index === 2 ? "bigger" : ""
+								}`}
+								key={caseItem.id}
+							>
+								<div
+									className="whiteBack"
+									style={{ backgroundImage: `url(${caseItem.imageUrl})` }}
+								></div>
+								<h3 className="caseTitle">{caseItem.title || "Valor"}</h3>
+								<p className="case-desc">
+									{caseItem.desc || "Ювелирные изделия"}
+								</p>
+								<div className="caseBtnWrapper">
+									<button className="overallBtn caseBtn">Логотип</button>
+									<button className="overallBtn caseBtn">Брендинг</button>
+									<button className="overallBtn caseBtn">Сайт</button>
+								</div>
+							</div>
+						))} */}
+
 						<div className="right-case-item fromCenter bigger getNone">
 							<div className="whiteBackRight"></div>
 							<h3 className="caseTitle alignToRight">Valor</h3>
@@ -432,6 +511,7 @@ const MmainPage = () => {
 								</Link>
 							</div>
 						</div>
+
 						<button className="overallBtn hasHover moreCaseBtn hidden">
 							больше кейсов →
 						</button>
