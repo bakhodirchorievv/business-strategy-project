@@ -806,7 +806,7 @@ const MmainPage = () => {
 								Оставить заявку →
 							</button>
 						</div>
-						<div className="packing-item click-packing">
+						<div className="packing-item ">
 							<h3 className="packing-item-title">Оптимус прайс</h3>
 							<h3 className="pack-price">240 000 ₽</h3>
 

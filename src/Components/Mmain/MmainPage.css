@@ -606,18 +606,30 @@ button {
 	transform: translateX(-50%);
 }
 
-.click-packing {
+.packing-item:hover {
 	background-color: rgba(251, 236, 28, 1);
-}
-.click-packing > .packing-item-title,
-.click-packing > .list-wrapper > .packing-list,
-.click-packing > .pack-price {
 	color: rgba(15, 17, 22, 1);
+	transition: 0.5s;
 }
-.click-packing > .packing-btn {
+
+.packing-item:hover .packing-item-title {
+	color: rgba(15, 17, 22, 1);
+	transition: 0.5s;
+}
+.packing-item:hover .pack-price {
+	color: rgba(15, 17, 22, 1);
+	transition: 0.5s;
+}
+.packing-item:hover .packing-list {
+	color: rgba(15, 17, 22, 1);
+	transition: 0.5s;
+}
+
+.packing-btn:hover {
 	background-color: rgba(15, 17, 22, 1);
 	border: 1px solid rgba(15, 17, 22, 1);
 	color: rgba(251, 236, 28, 1);
+	transition: 0.5s;
 }
 
 /* work with start */
