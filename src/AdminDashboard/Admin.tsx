@@ -202,12 +202,14 @@ const Admin = () => {
 				<div className="controlAuthWrapper">
 					<h2 className="addCaseTitle">Add New Case</h2>
 					<input
+						className="admin-input"
 						type="text"
 						placeholder="Case title..."
 						value={newCaseTitle}
 						onChange={(e) => setnewCaseTitle(e.target.value)}
 					/>
 					<input
+						className="admin-input"
 						type="text"
 						placeholder="Case desc..."
 						value={newdesc}
@@ -215,6 +217,7 @@ const Admin = () => {
 					/>
 
 					<input
+						className="admin-input"
 						type="file"
 						ref={fileInputRef}
 						onChange={(e) =>
@@ -222,7 +225,9 @@ const Admin = () => {
 						}
 					/>
 
-					<button onClick={onSubmitCase}>Submit Case</button>
+					<button className="admin-btn" onClick={onSubmitCase}>
+						Submit Case
+					</button>
 				</div>
 			)}
 
@@ -243,43 +248,61 @@ const Admin = () => {
 										/>
 									)}
 
-									<button onClick={() => deleteCase(Case.id, Case.imageUrl)}>
+									<button
+										className="admin-btn"
+										onClick={() => deleteCase(Case.id, Case.imageUrl)}
+									>
 										Delete Case
 									</button>
 									<br />
 									<input
+										className="admin-input"
 										onChange={(e) => setUpdatedTitle(e.target.value)}
 										type="text"
 										value={updatedTitle}
 										placeholder="new title..."
 									/>
-									<button onClick={() => onUpdateTitle(Case.id)}>
+									<button
+										className="admin-btn"
+										onClick={() => onUpdateTitle(Case.id)}
+									>
 										Update Title
 									</button>
 									<br />
 									<input
+										className="admin-input"
 										type="file"
 										ref={updatedImageFile}
 										onChange={(e) =>
 											setUpdatedImage(e.target.files ? e.target.files[0] : null)
 										}
 									/>
-									<button onClick={() => onUpdateImage(Case.id, Case.imageUrl)}>
+									<button
+										className="admin-btn"
+										onClick={() => onUpdateImage(Case.id, Case.imageUrl)}
+									>
 										Update Image
 									</button>
 									<br />
-									<button onClick={() => onDeleteImage(Case.id, Case.imageUrl)}>
+									<button
+										className="admin-btn"
+										onClick={() => onDeleteImage(Case.id, Case.imageUrl)}
+									>
 										Delete Image
 									</button>
 
 									<br />
 									<input
+										className="admin-input"
 										type="text"
 										onChange={(e) => setupdatedDesc(e.target.value)}
 										value={updatedDesc}
 										placeholder="new desc..."
 									/>
-									<button onClick={() => onUpDatedesc(Case.id)}>
+									<button
+										className="admin-btn"
+										onClick={() => onUpDatedesc(Case.id)}
+									>
 										Update Desc
 									</button>
 								</>

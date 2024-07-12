@@ -67,7 +67,7 @@ const AdminAuth = () => {
 	return (
 		<>
 			{isLoggedIn ? (
-				<button className="logOutFire" onClick={logOut}>
+				<button className="logOutFire admin-btn" onClick={logOut}>
 					Log Out
 				</button>
 			) : (

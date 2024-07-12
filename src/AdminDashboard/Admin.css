@@ -16,7 +16,7 @@
 	padding: 160px 0 30px;
 	text-align: center;
 }
-input {
+.admin-input {
 	border: none;
 	font-family: inherit;
 	padding: 5px 10px;
@@ -26,7 +26,7 @@ input {
 	border-radius: 5px;
 }
 
-button {
+.admin-btn {
 	border: none;
 	font-family: inherit;
 	background-color: white;
