@@ -23,7 +23,7 @@ button {
 	color: white;
 	margin: 0 auto;
 	user-select: none;
-	padding: 50px 72.5px 50px;
+	padding: 50px 72.5px 50px 0;
 	background-color: black;
 	position: fixed;
 	top: 0;

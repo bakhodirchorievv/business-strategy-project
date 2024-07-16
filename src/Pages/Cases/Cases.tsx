@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../Cases/Cases.css";
 import "../Cases/CasesResponsive.css";
 
-import { db } from "../../Pages/AdminDashboard/FirebaseConfig";
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
 import { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 
