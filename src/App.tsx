@@ -1,9 +1,10 @@
 import { lazy, Suspense, useEffect } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
-import Update from "./Update";
-import Container from "./Container";
+import Header from "./Pages/Header/Header";
+import Footer from "./Pages/Footer/Footer";
+import Update from "./Utils/Update";
+import Container from "./Utils/Container";
+import ScrollToTop from "./Utils/ScrollTop";
 
 const MmainPage = lazy(() => import("./Components/Mmain/MmainPage"));
 const Cases = lazy(() => import("./Components/Cases/Cases"));
@@ -32,7 +33,7 @@ const Site = lazy(() => import("./Components/Site/Site"));
 const Souvenir = lazy(() => import("./Components/Souvenir/Souvenir"));
 const Television = lazy(() => import("./Components/Television/Television"));
 
-const Admin = lazy(() => import("./AdminDashboard/Admin"));
+const Admin = lazy(() => import("./Pages/AdminDashboard/Admin"));
 
 const App = () => {
 	useEffect(() => {
@@ -45,6 +46,7 @@ const App = () => {
 				<Container>
 					<Header />
 					<Update />
+					<ScrollToTop />
 					<Suspense fallback={<div>Loading...</div>}>
 						<Routes>
 							<Route path="/" element={<MmainPage />} />

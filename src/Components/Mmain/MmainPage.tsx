@@ -18,11 +18,6 @@ const MmainPage = () => {
 	//  video controol start
 	const mainImages = document.querySelectorAll(".mainImage");
 	const handleMouseOver = (e: any) => {
-		if (mainImages.length === 0) {
-			console.error("No mainImage elements found");
-			return;
-		}
-
 		mainImages.forEach((video) => {
 			video.classList.remove("realBlock");
 			video.classList.remove("getNoneVideo");
