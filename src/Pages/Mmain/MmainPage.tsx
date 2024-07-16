@@ -3,17 +3,6 @@ import "../Mmain/MmainPage.css";
 import "../Mmain/Mmresponsive.css";
 import { useEffect, useRef, useState } from "react";
 
-// import { db } from "../../AdminDashboard/FirebaseConfig";
-// import { getDocs, collection } from "firebase/firestore";
-
-// interface Case {
-// 	id: string;
-// 	title: string;
-// 	desc: string;
-// 	imageUrl: string;
-// 	userId?: string;
-// }
-
 const MmainPage = () => {
 	//  video controol start
 	const mainImages = document.querySelectorAll(".mainImage");
@@ -185,27 +174,6 @@ const MmainPage = () => {
 			plus.classList.remove("disappearWithAnimation");
 		}
 	};
-
-	//  get data from firebase
-	// const [caseList, setCaseList] = useState<Case[]>([]);
-	// const casesCollectionRef = collection(db, "cases");
-
-	// const getCaseList = async () => {
-	// 	try {
-	// 		const data = await getDocs(casesCollectionRef);
-	// 		const filteredData: Case[] = data.docs.map((doc) => ({
-	// 			...(doc.data() as Omit<Case, "id">),
-	// 			id: doc.id,
-	// 		}));
-	// 		setCaseList(filteredData);
-	// 	} catch (error) {
-	// 		console.error(error);
-	// 	}
-	// };
-
-	// useEffect(() => {
-	// 	getCaseList();
-	// }, []);
 
 	return (
 		<>
