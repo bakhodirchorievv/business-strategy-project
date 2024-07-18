@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../Mmain/MmainPage.css";
 import "../Mmain/Mmresponsive.css";
 import { useEffect, useRef, useState } from "react";
+// import CasesPart from "../CasesPart/CasesPart";
 
 const MmainPage = () => {
 	//  video controol start
@@ -439,6 +440,8 @@ const MmainPage = () => {
 						className="bckg-layer hidden getNone"
 					/>
 				</div>
+
+				{/* <CasesPart /> */}
 
 				<div className="yellow-wrapper fromCenter">
 					<div className="yellow-left">

@@ -4,6 +4,8 @@ import { db } from "../../Components/AdminDashboard/FirebaseConfig";
 import { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 import { ClipLoader } from "react-spinners";
+import "./CasesPart.css";
+import "./CasesPartResponsive.css";
 
 interface Case {
 	id: string;
@@ -108,7 +110,10 @@ const CasesPart = () => {
 						</div>
 					))}
 
-				<button className="overallBtn hasHover moreCaseBtn hidden">
+				<button
+					style={{ display: isLoading ? "none" : "block" }}
+					className="overallBtn hasHover moreCaseBtn hidden"
+				>
 					больше кейсов →
 				</button>
 			</div>
