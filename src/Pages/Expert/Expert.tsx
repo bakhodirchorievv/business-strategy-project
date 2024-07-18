@@ -1,8 +1,47 @@
 import { Link } from "react-router-dom";
 import "../Expert/Expert.css";
 import "../Expert/ExpertResponsive.css";
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface ExpertCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
 
 const Expert = () => {
+	//get data from firebase
+	const [ExpertCardList, setExpertCardList] = useState<ExpertCard[]>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const ExpertCardsCollectionRef = collection(db, "ExpertCards");
+
+	const getExpertCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(ExpertCardsCollectionRef);
+			const filteredData: ExpertCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<ExpertCard, "id">),
+				id: doc.id,
+			}));
+			setExpertCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getExpertCardList();
+		console.log(ExpertCardList);
+	}, []);
 	return (
 		<>
 			<div className="expert-wrapper">
@@ -250,7 +289,30 @@ const Expert = () => {
 					<h3 className="generalTitle fifth-title">Портфолио</h3>
 
 					<div className="fifthBody">
-						<div className="fifthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							ExpertCardList.map((card) => (
+								<div className="fifthBodyItem" key={card.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${card.imageUrl})` }}
+									></div>
+									<h3 className="fifthBodyTitle">
+										{card.title || "Пропорция"}
+									</h3>
+									<p className="fifthBodyDesc">
+										{card.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="fifthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+						{/* <div className="fifthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fifthBodyTitle">Пропорция</h3>
 							<p className="fifthBodyDesc">Салон красоты</p>
@@ -273,7 +335,7 @@ const Expert = () => {
 							<Link to={"/Site"}>
 								<button className="fifthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="fifth-part-foot">

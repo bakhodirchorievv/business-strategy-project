@@ -1,8 +1,47 @@
 import { Link } from "react-router-dom";
 import "../Logo/Logo.css";
 import "../Logo/LogoResponsive.css";
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface LogoCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
 
 const Logo = () => {
+	//get data from firebase
+	const [LogoCardList, setLogoCardList] = useState<LogoCard[]>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const LogoCardsCollectionRef = collection(db, "LogoCards");
+
+	const getLogoCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(LogoCardsCollectionRef);
+			const filteredData: LogoCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<LogoCard, "id">),
+				id: doc.id,
+			}));
+			setLogoCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getLogoCardList();
+		console.log(LogoCardList);
+	}, []);
 	return (
 		<>
 			<div className="logo-wrapper">
@@ -179,7 +218,30 @@ const Logo = () => {
 				<div className="fourth-part">
 					<h3 className="generalTitle fourth-title">Портфолио и отзывы</h3>
 					<div className="fourthBody">
-						<div className="fourthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							LogoCardList.map((card) => (
+								<div className="fourthBodyItem" key={card.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${card.imageUrl})` }}
+									></div>
+									<h3 className="fourthBodyTitle">
+										{card.title || "Пропорция"}
+									</h3>
+									<p className="fourthBodyDesc">
+										{card.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="fourthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+						{/* <div className="fourthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fourthBodyTitle">Пропорция</h3>
 							<p className="fourthBodyDesc">Салон красоты</p>
@@ -202,7 +264,7 @@ const Logo = () => {
 							<Link to={"/Site"}>
 								<button className="fourthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 				</div>
 

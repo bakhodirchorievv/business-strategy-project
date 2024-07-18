@@ -29,7 +29,69 @@ const Site = lazy(() => import("./Pages/Site/Site"));
 const Souvenir = lazy(() => import("./Pages/Souvenir/Souvenir"));
 const Television = lazy(() => import("./Pages/Television/Television"));
 
-const Admin = lazy(() => import("./Components/AdminDashboard/Admin"));
+// admin pages start
+const Admin = lazy(() => import("../src/Components/AdminDashboard/Admin"));
+const MainPageCard = lazy(
+	() => import("./Components/AdminDashboard/MainPageCard/MainPage")
+);
+const BrandStrategyCard = lazy(
+	() =>
+		import("./Components/AdminDashboard/BrandStrategyCard/BrandStrategyCard")
+);
+const VizitkaCard = lazy(
+	() => import("./Components/AdminDashboard/VizitkaCard/VizitkaCard")
+);
+const CorporateCard = lazy(
+	() => import("./Components/AdminDashboard/CorporateCard/CorporateCard")
+);
+const CorporativeCard = lazy(
+	() => import("./Components/AdminDashboard/CorporativeCard/CorporativeCard")
+);
+const DescriptorCard = lazy(
+	() => import("./Components/AdminDashboard/DescriptorCard/DescriptorCard")
+);
+const ExpertCard = lazy(
+	() => import("./Components/AdminDashboard/ExpertCard/ExpertCard")
+);
+const GuidelineCard = lazy(
+	() => import("./Components/AdminDashboard/GuidelineCard/GuidelineCard")
+);
+const LogoCard = lazy(
+	() => import("./Components/AdminDashboard/LogoCard/LogoCard")
+);
+const MotionDesignCard = lazy(
+	() => import("./Components/AdminDashboard/MotionDesignCard/MotionDesignCard")
+);
+const NamingCard = lazy(
+	() => import("./Components/AdminDashboard/NamingCard/NamingCard")
+);
+const NativeCard = lazy(
+	() => import("./Components/AdminDashboard/NativeCard/NativeCard")
+);
+const PackingCard = lazy(
+	() => import("./Components/AdminDashboard/PackingCard/PackingCard")
+);
+const PartnerCard = lazy(
+	() => import("./Components/AdminDashboard/PartnerCard/PartnerCard")
+);
+const PresentationCard = lazy(
+	() => import("./Components/AdminDashboard/PresentationCard/PresentationCard")
+);
+const RadioCard = lazy(
+	() => import("./Components/AdminDashboard/RadioCard/RadioCard")
+);
+const ShopCard = lazy(
+	() => import("./Components/AdminDashboard/ShopCard/ShopCard")
+);
+const SiteCard = lazy(
+	() => import("./Components/AdminDashboard/SiteCard/SiteCard")
+);
+const SouvenirCard = lazy(
+	() => import("./Components/AdminDashboard/SouvenirCard/SouvenirCard")
+);
+const TelevisionCard = lazy(
+	() => import("./Components/AdminDashboard/TelevisionCard/TelevisionCard")
+);
 
 const App = () => {
 	useEffect(() => {
@@ -67,7 +129,38 @@ const App = () => {
 							<Route path="/Site" element={<Site />} />
 							<Route path="/Souvenir" element={<Souvenir />} />
 							<Route path="/Television" element={<Television />} />
+
+							{/* admin pages start */}
 							<Route path="/Admin" element={<Admin />} />
+							<Route path="/Admin/MainPage" element={<MainPageCard />} />
+							<Route
+								path="/Admin/BrandStrategy"
+								element={<BrandStrategyCard />}
+							/>
+							<Route path="/Admin/Card" element={<VizitkaCard />} />
+							<Route path="/Admin/Corporate" element={<CorporateCard />} />
+							<Route path="/Admin/Corporative" element={<CorporativeCard />} />
+							<Route path="/Admin/Descriptor" element={<DescriptorCard />} />
+							<Route path="/Admin/Expert" element={<ExpertCard />} />
+							<Route path="/Admin/Guideline" element={<GuidelineCard />} />
+							<Route path="/Admin/Logo" element={<LogoCard />} />
+							<Route
+								path="/Admin/MotionDesign"
+								element={<MotionDesignCard />}
+							/>
+							<Route path="/Admin/Naming" element={<NamingCard />} />
+							<Route path="/Admin/Native" element={<NativeCard />} />
+							<Route path="/Admin/Packing" element={<PackingCard />} />
+							<Route path="/Admin/Partner" element={<PartnerCard />} />
+							<Route
+								path="/Admin/Presentation"
+								element={<PresentationCard />}
+							/>
+							<Route path="/Admin/Radio" element={<RadioCard />} />
+							<Route path="/Admin/Shop" element={<ShopCard />} />
+							<Route path="/Admin/Site" element={<SiteCard />} />
+							<Route path="/Admin/Souvenir" element={<SouvenirCard />} />
+							<Route path="/Admin/Television" element={<TelevisionCard />} />
 						</Routes>
 					</Suspense>
 

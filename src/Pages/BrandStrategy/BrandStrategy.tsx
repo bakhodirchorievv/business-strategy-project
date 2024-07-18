@@ -3,6 +3,20 @@ import "../BrandStrategy/BrandStrategy.css";
 import "../BrandStrategy/BrandResponsive.css";
 import { RefObject, useRef } from "react";
 
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface BrandStrategyCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
+
 const BrandStrategy = () => {
 	const scrollContainerRef: RefObject<HTMLDivElement> = useRef(null);
 
@@ -17,6 +31,35 @@ const BrandStrategy = () => {
 			scrollContainerRef.current.scrollBy({ left: -300, behavior: "smooth" });
 		}
 	};
+
+	//get data from firebase
+	const [BrandStrategyCardList, setBrandStrategyCardList] = useState<
+		BrandStrategyCard[]
+	>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const BrandStrategyCardsCollectionRef = collection(db, "BrandStrategyCards");
+
+	const getBrandStrategyCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(BrandStrategyCardsCollectionRef);
+			const filteredData: BrandStrategyCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<BrandStrategyCard, "id">),
+				id: doc.id,
+			}));
+			setBrandStrategyCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getBrandStrategyCardList();
+		console.log(BrandStrategyCardList);
+	}, []);
 
 	return (
 		<>
@@ -287,7 +330,31 @@ const BrandStrategy = () => {
 					</h3>
 
 					<div className="fourthBody">
-						<div className="fourthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							BrandStrategyCardList.map((strategyItem) => (
+								<div className="fourthBodyItem" key={strategyItem.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${strategyItem.imageUrl})` }}
+									></div>
+									<h3 className="fourthBodyTitle">
+										{strategyItem.title || "Пропорция"}
+									</h3>
+									<p className="fourthBodyDesc">
+										{strategyItem.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="fourthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+
+						{/* <div className="fourthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fourthBodyTitle">Пропорция</h3>
 							<p className="fourthBodyDesc">Салон красоты</p>
@@ -310,7 +377,7 @@ const BrandStrategy = () => {
 							<Link to={"/Site"}>
 								<button className="fourthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

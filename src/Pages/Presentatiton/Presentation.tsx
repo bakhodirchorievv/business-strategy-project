@@ -1,8 +1,49 @@
 import { Link } from "react-router-dom";
 import "./Presentation.css";
 import "./PresentResponsive.css";
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface PresentationCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
 
 const Presentation = () => {
+	//get data from firebase
+	const [PresentationCardList, setPresentationCardList] = useState<
+		PresentationCard[]
+	>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const PresentationCardsCollectionRef = collection(db, "PresentationCards");
+
+	const getPresentationCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(PresentationCardsCollectionRef);
+			const filteredData: PresentationCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<PresentationCard, "id">),
+				id: doc.id,
+			}));
+			setPresentationCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getPresentationCardList();
+		console.log(PresentationCardList);
+	}, []);
 	return (
 		<>
 			<div className="presentation-wrapper">
@@ -188,7 +229,30 @@ const Presentation = () => {
 					<h3 className="generalTitle fifth-title">Портфолио</h3>
 
 					<div className="fifthBody">
-						<div className="fifthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							PresentationCardList.map((card) => (
+								<div className="fifthBodyItem" key={card.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${card.imageUrl})` }}
+									></div>
+									<h3 className="fifthBodyTitle">
+										{card.title || "Пропорция"}
+									</h3>
+									<p className="fifthBodyDesc">
+										{card.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="fifthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+						{/* <div className="fifthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fifthBodyTitle">Пропорция</h3>
 							<p className="fifthBodyDesc">Салон красоты</p>
@@ -211,7 +275,7 @@ const Presentation = () => {
 							<Link to={"/Site"}>
 								<button className="fifthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="fifth-part-foot">

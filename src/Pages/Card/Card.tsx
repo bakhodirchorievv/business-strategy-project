@@ -1,8 +1,47 @@
 import { Link } from "react-router-dom";
 import "../Card/Card.css";
 import "../Card/CardResponsive.css";
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface VizitkaCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
 
 const Card = () => {
+	//get data from firebase
+	const [VizitkaCardList, setVizitkaCardList] = useState<VizitkaCard[]>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const VizitkaCardsCollectionRef = collection(db, "VizitkaCards");
+
+	const getVizitkaCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(VizitkaCardsCollectionRef);
+			const filteredData: VizitkaCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<VizitkaCard, "id">),
+				id: doc.id,
+			}));
+			setVizitkaCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getVizitkaCardList();
+		console.log(VizitkaCardList);
+	}, []);
 	return (
 		<>
 			<div className="card-wrapper">
@@ -188,17 +227,17 @@ const Card = () => {
 
 					<div className="third-body">
 						<img
-							src="/business-strategy-project/MainPage/corporateFirst.png"
+							src="/business-strategy-project/MainPage/VizitkaFirst.png"
 							alt=""
 							className="thirdBodyImg"
 						/>
 						<img
-							src="/business-strategy-project/MainPage/corporateSecond.png"
+							src="/business-strategy-project/MainPage/VizitkaSecond.png"
 							alt=""
 							className="thirdBodyImg"
 						/>
 						<img
-							src="/business-strategy-project/MainPage/corporateThird.png"
+							src="/business-strategy-project/MainPage/VizitkaThird.png"
 							alt=""
 							className="thirdBodyImg"
 						/>
@@ -315,7 +354,30 @@ const Card = () => {
 					</h3>
 
 					<div className="sixthBody">
-						<div className="sixthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							VizitkaCardList.map((card) => (
+								<div className="sixthBodyItem" key={card.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${card.imageUrl})` }}
+									></div>
+									<h3 className="sixthBodyTitle">
+										{card.title || "Пропорция"}
+									</h3>
+									<p className="sixthBodyDesc">
+										{card.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="sixthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+						{/* <div className="sixthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="sixthBodyTitle">Пропорция</h3>
 							<p className="sixthBodyDesc">Салон красоты</p>
@@ -338,7 +400,7 @@ const Card = () => {
 							<Link to={"/Site"}>
 								<button className="sixthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="sixth-part-foot">

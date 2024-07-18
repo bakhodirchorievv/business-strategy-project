@@ -1,8 +1,47 @@
 import { Link } from "react-router-dom";
 import "./Naming.css";
 import "./NamingResponsive.css";
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface NamingCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
 
 const Naming = () => {
+	//get data from firebase
+	const [NamingCardList, setNamingCardList] = useState<NamingCard[]>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const NamingCardsCollectionRef = collection(db, "NamingCards");
+
+	const getNamingCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(NamingCardsCollectionRef);
+			const filteredData: NamingCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<NamingCard, "id">),
+				id: doc.id,
+			}));
+			setNamingCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getNamingCardList();
+		console.log(NamingCardList);
+	}, []);
 	return (
 		<>
 			<div className="naming-wrapper">
@@ -251,7 +290,30 @@ const Naming = () => {
 					</h3>
 
 					<div className="sixthBody">
-						<div className="sixthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							NamingCardList.map((card) => (
+								<div className="sixthBodyItem" key={card.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${card.imageUrl})` }}
+									></div>
+									<h3 className="sixthBodyTitle">
+										{card.title || "Пропорция"}
+									</h3>
+									<p className="sixthBodyDesc">
+										{card.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="sixthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+						{/* <div className="sixthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="sixthBodyTitle">Пропорция</h3>
 							<p className="sixthBodyDesc">Салон красоты</p>
@@ -274,7 +336,7 @@ const Naming = () => {
 							<Link to={"/Site"}>
 								<button className="sixthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="sixth-part-foot">

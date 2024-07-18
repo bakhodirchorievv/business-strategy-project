@@ -1,8 +1,47 @@
 import { Link } from "react-router-dom";
 import "./Packing.css";
 import "./PackingResponsive.css";
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface PackingCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
 
 const Packing = () => {
+	//get data from firebase
+	const [PackingCardList, setPackingCardList] = useState<PackingCard[]>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const PackingCardsCollectionRef = collection(db, "PackingCards");
+
+	const getPackingCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(PackingCardsCollectionRef);
+			const filteredData: PackingCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<PackingCard, "id">),
+				id: doc.id,
+			}));
+			setPackingCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getPackingCardList();
+		console.log(PackingCardList);
+	}, []);
 	return (
 		<>
 			<div className="packing-wrapper">
@@ -212,7 +251,30 @@ const Packing = () => {
 					<h3 className="generalTitle fourth-title">Портфолио и отзывы</h3>
 
 					<div className="fourthBody">
-						<div className="fourthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							PackingCardList.map((card) => (
+								<div className="fourthBodyItem" key={card.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${card.imageUrl})` }}
+									></div>
+									<h3 className="fourthBodyTitle">
+										{card.title || "Пропорция"}
+									</h3>
+									<p className="fourthBodyDesc">
+										{card.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="fourthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+						{/* <div className="fourthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fourthBodyTitle">Пропорция</h3>
 							<p className="fourthBodyDesc">Салон красоты</p>
@@ -235,7 +297,7 @@ const Packing = () => {
 							<Link to={"/Site"}>
 								<button className="fourthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="fourth-part-foot">

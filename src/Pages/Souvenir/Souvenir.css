@@ -266,6 +266,7 @@ button {
 	width: 550px;
 	height: 450px;
 	border-radius: 30px;
+	background-size: cover;
 }
 
 .fifthBodyTitle {

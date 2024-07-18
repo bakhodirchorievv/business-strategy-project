@@ -1,8 +1,47 @@
 import { Link } from "react-router-dom";
 import "./Site.css";
 import "./SiteResponsive.css";
+// get data from firebase
+import { db } from "../../Components/AdminDashboard/FirebaseConfig";
+import { useEffect, useState } from "react";
+import { getDocs, collection } from "firebase/firestore";
+import { ClipLoader } from "react-spinners";
+
+interface SiteCard {
+	id: string;
+	title: string;
+	desc: string;
+	imageUrl: string;
+	userId?: string;
+}
 
 const Site = () => {
+	//get data from firebase
+	const [SiteCardList, setSiteCardList] = useState<SiteCard[]>([]);
+
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const SiteCardsCollectionRef = collection(db, "SiteCards");
+
+	const getSiteCardList = async () => {
+		setIsLoading(true);
+		try {
+			const data = await getDocs(SiteCardsCollectionRef);
+			const filteredData: SiteCard[] = data.docs.map((doc) => ({
+				...(doc.data() as Omit<SiteCard, "id">),
+				id: doc.id,
+			}));
+			setSiteCardList(filteredData);
+			setIsLoading(false);
+		} catch (error) {
+			setIsLoading(false);
+			console.error(error);
+		}
+	};
+
+	useEffect(() => {
+		getSiteCardList();
+		console.log(SiteCardList);
+	}, []);
 	return (
 		<>
 			<div className="site-wrapper">
@@ -242,7 +281,30 @@ const Site = () => {
 					</h3>
 
 					<div className="fourthBody">
-						<div className="fourthBodyItem">
+						{isLoading ? (
+							<div className="loading-indicator">
+								<ClipLoader size={50} color={"#eee"} loading={isLoading} />
+							</div>
+						) : (
+							SiteCardList.map((card) => (
+								<div className="fourthBodyItem" key={card.id}>
+									<div
+										className="whiteBack"
+										style={{ backgroundImage: `url(${card.imageUrl})` }}
+									></div>
+									<h3 className="fourthBodyTitle">
+										{card.title || "Пропорция"}
+									</h3>
+									<p className="fourthBodyDesc">
+										{card.desc || "Салон красоты"}
+									</p>
+									<Link to={"/Site"}>
+										<button className="fourthBtn">Сайт</button>
+									</Link>
+								</div>
+							))
+						)}
+						{/* <div className="fourthBodyItem">
 							<div className="whiteBack"></div>
 							<h3 className="fourthBodyTitle">Пропорция</h3>
 							<p className="fourthBodyDesc">Салон красоты</p>
@@ -265,7 +327,7 @@ const Site = () => {
 							<Link to={"/Site"}>
 								<button className="fourthBtn">Сайт</button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="fourth-part-foot">
