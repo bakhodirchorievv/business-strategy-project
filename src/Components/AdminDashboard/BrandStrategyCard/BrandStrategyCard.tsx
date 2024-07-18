@@ -212,7 +212,7 @@ const BrandStrategyCard = () => {
 
 	return (
 		<div className="BrandStrategyCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

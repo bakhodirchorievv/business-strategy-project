@@ -207,7 +207,7 @@ const TelevisionCard = () => {
 
 	return (
 		<div className="TelevisionCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

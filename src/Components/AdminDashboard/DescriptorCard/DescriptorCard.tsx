@@ -209,7 +209,7 @@ const DescriptorCard = () => {
 
 	return (
 		<div className="DescriptorCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

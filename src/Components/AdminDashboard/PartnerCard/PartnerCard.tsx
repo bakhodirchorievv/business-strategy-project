@@ -208,7 +208,7 @@ const PartnerCard = () => {
 
 	return (
 		<div className="PartnerCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

@@ -205,7 +205,7 @@ const LogoCard = () => {
 
 	return (
 		<div className="LogoCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

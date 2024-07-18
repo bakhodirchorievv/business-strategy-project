@@ -208,7 +208,7 @@ const SouvenirCard = () => {
 
 	return (
 		<div className="SouvenirCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

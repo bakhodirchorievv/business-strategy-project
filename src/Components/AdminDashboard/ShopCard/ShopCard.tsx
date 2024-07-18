@@ -206,7 +206,7 @@ const ShopCard = () => {
 
 	return (
 		<div className="ShopCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

@@ -207,7 +207,7 @@ const PackingCard = () => {
 
 	return (
 		<div className="PackingCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

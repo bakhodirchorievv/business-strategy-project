@@ -207,7 +207,7 @@ const ExpertCard = () => {
 
 	return (
 		<div className="ExpertCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

@@ -208,7 +208,7 @@ const MotionDesignCard = () => {
 
 	return (
 		<div className="MotionDesignCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

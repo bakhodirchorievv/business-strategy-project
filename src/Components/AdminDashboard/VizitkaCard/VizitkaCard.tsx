@@ -207,7 +207,7 @@ const VizitkaCard = () => {
 
 	return (
 		<div className="VizitkaCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

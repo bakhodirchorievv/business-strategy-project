@@ -211,7 +211,7 @@ const CorporateCard = () => {
 
 	return (
 		<div className="CorporateCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

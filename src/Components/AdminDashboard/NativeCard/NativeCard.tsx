@@ -208,7 +208,7 @@ const NativeCard = () => {
 
 	return (
 		<div className="NativeCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

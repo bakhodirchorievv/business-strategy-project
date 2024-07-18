@@ -209,7 +209,7 @@ const GuidelineCard = () => {
 
 	return (
 		<div className="GuidelineCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

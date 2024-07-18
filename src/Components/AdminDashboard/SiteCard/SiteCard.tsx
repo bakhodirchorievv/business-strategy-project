@@ -206,7 +206,7 @@ const SiteCard = () => {
 
 	return (
 		<div className="SiteCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

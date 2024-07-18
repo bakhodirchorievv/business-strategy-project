@@ -209,7 +209,7 @@ const CorporativeCard = () => {
 
 	return (
 		<div className="CorporativeCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

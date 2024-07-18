@@ -209,7 +209,7 @@ const PresentationCard = () => {
 
 	return (
 		<div className="PresentationCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 

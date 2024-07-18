@@ -208,7 +208,7 @@ const CasesCard = () => {
 
 	return (
 		<div className="adminWrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 				{userEmail && (

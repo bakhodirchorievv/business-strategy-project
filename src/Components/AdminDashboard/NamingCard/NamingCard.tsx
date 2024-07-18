@@ -206,7 +206,7 @@ const NamingCard = () => {
 
 	return (
 		<div className="NamingCard-admin-wrapper">
-			<NavBar />
+			{userEmail && <NavBar />}
 			<div className="right-side-wrapper">
 				<AdminAuth />
 
